@@ -1,0 +1,27 @@
+.forumItem{
+    margin-top: 30%;
+    background-color: #956D84;
+    padding: 47% 4% 6% 4%;
+}
+.forumItemf{
+    width: 32%;
+}
+.forumImg{
+    position: absolute;
+    width: 22.3%;
+    margin: 0 0 100px 1.7%;
+}
+.forumTitle{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 5%;
+}
+.forumText{
+    text-decoration: none;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 250;
+    font-size: 14px;
+    color: white;
+}

@@ -1,0 +1,114 @@
+.header__top {
+    background-color: #333333;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header__top a{
+    text-decoration: none;
+}
+.header__top a:hover{
+    color: #ead6e0;
+}
+.header__currency{
+    background-color: #333333;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header__currMenu{
+    background-color: #333333;
+    border: 1px solid #1f1f1f;
+    border-top: 0;
+    color: white;
+    position: absolute;
+    width: auto;
+    padding-right: 0.7%;
+    margin-top: 5px;
+}
+.header__currMenuItem{
+    border-top: 1px solid #1f1f1f;
+    padding: 7% 118% 7% 7%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+.header__currMenuItem:hover{
+    color: #956D84;
+}
+.header__language{
+    background-color: #333333;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header__city{
+    background-color: #333333;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header__icon{
+    margin-top: 2px;
+}
+.header__item{
+    display: flex;
+    gap: 10px;
+}
+.header__authorization{
+    display: flex;
+    align-items: center;
+}
+.header__options{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+.header__choice{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #956D84;
+}
+.header__arrow_act{
+    transform: rotate(180deg);
+}
+.header__enter{
+    display: flex;
+    text-decoration: none;
+}
+.header__entText{
+    padding: 0 7px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+.header__regist{
+    padding: 0 7px;
+    border-left: 1px solid #956D84;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+.header__currencyMenu{
+}
+.header__languageMenu{
+}
+.header__cityMenu{
+}

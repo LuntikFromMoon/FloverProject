@@ -1,0 +1,137 @@
+.header__bottom{
+    display: flex;
+    padding: 0 10%;
+    margin: 2% 0 1% 0;
+    justify-content: space-between;
+    align-content: center;
+}
+.header__logo{
+    text-align: center;
+}
+.logoTitle{
+    font-family: Attentica4F, "Segoe Print", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+}
+.logoSubtitle{
+    font-family: "Segoe UI Historic", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    color: #828282;
+}
+.header__searchBox{
+    width: 60%;
+    margin-top: 2%;
+}
+.header__searchProd{
+    display: flex;
+    justify-content: space-between;
+}
+.header__searchCategory{
+    width: 30%;
+    margin-right: 5%;
+    padding: 1% 1% 1% 0;
+    border-bottom: 2px solid #956D84;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #828282;
+    display: flex;
+}
+.header__searchCategoryBar{
+    border: 0;
+    background-color: white;
+    display: flex;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #828282;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.header__categoryMenu{
+    border: 1px solid #956D84;
+    border-top: 0;
+    margin-top: 1.86%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333;
+    position: absolute;
+    width: 14.5%;
+    display: none;
+}
+.header__categoryMenu_active{
+    border: 1px solid #956D84;
+    border-top: 0;
+    margin-top: 1.86%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333;
+    position: absolute;
+    width: 14.5%;
+}
+.header__categoryMenuItem:hover{
+    background-color: #ffeef5;
+    color: #956D84;
+}
+.header__categoryMenuItem{
+    border-top: 1px solid #956D84;
+    padding: 5%;
+    background-color: white;
+}
+.header__searchExactProd{
+    width: 65%;
+    padding: 1% 1% 1% 0;
+    border-bottom: 2px solid #956D84;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #828282;
+    display: flex;
+    justify-content: space-between;
+}
+.header__mainMenu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+.header__mainMenu a{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333333;
+}
+.header__mainMenu a:hover{
+    color: #956D84;
+}
+.header__bottomRight{
+    margin-left: 5%;
+    align-self: center;
+}
+.header__socialNetworks{
+    display: flex;
+}
+.header__phoneNumb{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333;
+}
+.header__deferredProd{
+    margin-top: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #828282;
+}
+.header__mainMenu a{
+    text-decoration: none;
+}

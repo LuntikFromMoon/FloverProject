@@ -1,0 +1,30 @@
+
+.info{
+    width: 20%;
+    color: #d1d1d1;
+}
+.info__name{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10%;
+}
+.info__text{
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 5%;
+    color: #d1d1d1;
+}
+.info__text:hover{
+    color: #956D84 !important;
+}

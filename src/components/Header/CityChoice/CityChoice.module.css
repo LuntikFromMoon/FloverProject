@@ -1,0 +1,39 @@
+.header__city{
+    background-color: #333333;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header__choice{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #956D84;
+}
+.header__currMenu_active{
+    background-color: #333333;
+    border: 1px solid #1f1f1f;
+    border-top: 0;
+    color: white;
+    position: absolute;
+    width: auto;
+    padding-right: 0.7%;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.header__currMenu{
+    display: none;
+}
+.header__currMenuItem{
+    border-top: 1px solid #1f1f1f;
+    padding: 7% 200% 7% 7%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+.header__currMenuItem:hover{
+    color: #956D84;
+}

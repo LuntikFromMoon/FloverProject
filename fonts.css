@@ -1,0 +1,31 @@
+@font-face {
+    font-family: MuseoSansCyrl;
+    font-weight: 300;
+    font-style: normal;
+    src: local("MuseoSansCyrl"), local("MuseoSansCyrl-Regular"),
+    url('/src/fonts/MuseoSansCyrl300.ttf') format('tff'),
+    url('/src/fonts/MuseoSansCyrl300.otf') format('off'),
+    url('/src/fonts/MuseoSansCyrl300.eot') format('eot'),
+    url('/src/fonts/MuseoSansCyrl300.woff') format('woff');
+    font-display: fallback;
+}
+@font-face {
+    font-family: MuseoSansCyrl;
+    font-weight: 700;
+    font-style: normal;
+    src: local("MuseoSansCyrl"), local("MuseoSansCyrl-Regular"),
+    url('/src/fonts/MuseoSansCyrl700.ttf') format('tff'),
+    url('/src/fonts/MuseoSansCyrl700.otf') format('off'),
+    url('/src/fonts/MuseoSansCyrl700.eot') format('eot'),
+    url('/src/fonts/MuseoSansCyrl700.woff') format('woff');
+    font-display: fallback;
+}
+@font-face {
+    font-family: Attentica4F;
+    font-weight: 400;
+    font-style: normal;
+    src: local("Attentica4F"), local("Attentica4F-Regular"),
+    url('/src/fonts/Attentica 4F UltraLight.ttf') format('tff'),
+    url('/src/fonts/Attentica 4F UltraLight.otf') format('off');
+    font-display: fallback;
+}
