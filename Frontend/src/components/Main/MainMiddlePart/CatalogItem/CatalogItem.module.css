@@ -1,0 +1,46 @@
+.catalogItemf{
+    width: 23.5%;
+}
+.catalogImgContainer{
+    width: 100%;
+    max-height: 500px;
+    overflow-y: hidden;
+}
+.catalogImg{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.catalogItem{
+    margin-top: 20px;
+}
+.catalogTitle{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #956D84;
+}
+.catalogText{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #875b76;
+    margin-top: 10px;
+}
+.orderButton{
+    display: flex;
+    border: 1px solid #e4acd3;
+    border-radius: 7px;
+    height: 50px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(184, 117, 150, 0.71);
+    text-decoration: none;
+}
+.orderButton__text{
+    margin-left: 3%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}

@@ -1,0 +1,23 @@
+.main__middle{
+    padding-bottom: 100px;
+}
+.main__title{
+    display: flex;
+    align-items: center;
+}
+.main__text{
+    text-align: center;
+    width: 100%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+.main__catalog{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    row-gap: 10px;
+    column-gap: 2%;
+}
