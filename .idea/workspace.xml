@@ -4,102 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/yoflower.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/yoflower.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/Arrow.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/Arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/ArrowActive.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/Basket(29px).jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/CarIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/CategoryTriangle.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/FlowerIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/HeartIcon(29px).jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/HeartIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/LoupeIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/MainMTriangle.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/PayFifthIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/PayFirstIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/PayForthIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/PaySecondIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/PaySixthIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/PayThirdIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/PhoneIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/UserIcon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/image 26 (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/image 26 (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/image 26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/main_forum_pic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/main_left_pic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/main_map_pic.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/main_pictures.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/main_right_first.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/main_right_forth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/main_right_second.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/main_right_third.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/photo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/present.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/pictures/video.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterInfo/FooterInfo.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterInfo/FooterInfo.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/CatalogMenu/CatalogMenu.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/CatalogMenu/CatalogMenu.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/CategoryChoice/CategoryChoice.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/CategoryChoice/CategoryChoice.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/CityChoice/CityChoice.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/CityChoice/CityChoice.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/CurrencyChoice/CurrencyChoice.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/CurrencyChoice/CurrencyChoice.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderInfo/HeaderInfo.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderInfo/HeaderInfo.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderInfo/Option/Option.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderInfo/Option/Option.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/LanguageChoice/LanguageChoice.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/LanguageChoice/LanguageChoice.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Subheader/Subheader.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Subheader/Subheader.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainBotPart/ForumItem/ForumItem.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainBotPart/ForumItem/ForumItem.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainBotPart/MainBotPart.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainBotPart/MainBotPart.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainTopPart/MainTopPart.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainTopPart/MainTopPart.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Attentica 4F UltraLight.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Attentica 4F UltraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/MuseoSansCyrl300.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/MuseoSansCyrl300.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/MuseoSansCyrl300.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/MuseoSansCyrl300.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/MuseoSansCyrl700.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/MuseoSansCyrl700.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/MuseoSansCyrl700.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/MuseoSansCyrl700.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" />
+    <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="feat: Создал скелет бэкенд приложения">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Controller/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/HeaderInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/HeaderInfo.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/Backend/composer.json</pharConfigPath>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -121,6 +45,58 @@
     &quot;accountId&quot;: &quot;9732b280-0acd-4655-af65-c6fb28d54f36&quot;
   }
 }</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../php/php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/Backend/vendor/composer" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/Backend/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/Backend/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/Backend/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/Backend/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/Backend/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/Backend/vendor/doctrine/doctrine-migrations-bundle" />
+    </include_path>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -134,21 +110,39 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.localhost:8000.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;create-backend&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Programming/FloverProject/Backend/config/doctrine&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;sshConsole&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Programs\\WebStorm 2025.1.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Programming\FloverProject\Backend\config\doctrine" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="localhost:8000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.localhost:8000" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -163,8 +157,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763211409497</updated>
-      <workItem from="1763211411346" duration="3097000" />
+      <workItem from="1763211411346" duration="11775000" />
+      <workItem from="1763292587351" duration="6322000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: Создал скелет бэкенд приложения">
+      <option name="closed" value="true" />
+      <created>1763215308762</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1763215308762</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,5 +184,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Создал скелет бэкенд приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Создал скелет бэкенд приложения" />
   </component>
 </project>

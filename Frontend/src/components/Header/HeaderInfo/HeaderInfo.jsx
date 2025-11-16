@@ -9,6 +9,15 @@ import {LanguageChoice} from "../LanguageChoice/LanguageChoice.jsx";
 import {CityChoice} from "../CityChoice/CityChoice.jsx";
 
 const HeaderInfo = () => {
+    function OnClickLogin() {
+        fetch("http://localhost:8000/api/login", {
+            method: "POST",
+        })
+            .then(res => res.json())
+            .then(data => console.log(data))
+            .catch(err => console.log(err));
+    }
+
     return <div className={styles.header__top}>
         <div className={styles.header__nav}>
             <div className={styles.header__item}>
@@ -48,6 +57,7 @@ const HeaderInfo = () => {
                     <UserIcon/>
                 </div>
                 <a className={styles.header__entText} href='#'>Вход</a>
+                {/*<button className={styles.header__entText} type={"button"} onClick={OnClickLogin}>Вход</button>*/}
             </a>
             <a href='#'>
                 <a className={styles.header__regist} href='#'>Регистрация</a>

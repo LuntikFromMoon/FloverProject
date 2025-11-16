@@ -24,7 +24,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className={styles.footer__bot}>
-                <p>Copyright © 2024. Все права защищены</p>
+                <p>Copyright © 2025. Все права защищены</p>
                 <div className={styles.footer__pay}>
                     <p>Способы оплаты</p>
                     <a href='#'><PayFirstIcon /></a>
