@@ -25,7 +25,8 @@
         </many-to-one>
 
         <field name="name" column="name" type="string" length="255" nullable="false"/>
-        <field name="description" column="description" type="string" length="255" nullable="true"/>
+        <field name="description" column="description" type="string" length="1000" nullable="true"/>
         <field name="price" column="price" type="float" nullable="false"/>
+        <field name="imagePath" column="image_path" type="string" length="255" nullable="false"/>
     </entity>
 </doctrine-mapping>

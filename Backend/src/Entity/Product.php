@@ -5,11 +5,12 @@ namespace App\Entity;
 class Product
 {
     public function __construct(
-        private int $id,
+        private ?int $id,
         private ProductCategory $productCategory,
         private string $name,
         private string $description,
         private float $price,
+        private string $imagePath,
     ) {}
 
     public function getId(): int
@@ -35,5 +36,10 @@ class Product
     public function getPrice(): float
     {
         return $this->price;
+    }
+
+    public function getImagePath(): string
+    {
+        return $this->imagePath;
     }
 }

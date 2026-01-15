@@ -56,8 +56,8 @@ const HeaderInfo = () => {
                 <div className={styles.header__icon}>
                     <UserIcon/>
                 </div>
-                <a className={styles.header__entText} href='#'>Вход</a>
-                {/*<button className={styles.header__entText} type={"button"} onClick={OnClickLogin}>Вход</button>*/}
+                {/*<a className={styles.header__entText} href='#'>Вход</a>*/}
+                <button className={styles.header__entText} type={"button"} onClick={OnClickLogin}>Вход</button>
             </a>
             <a href='#'>
                 <a className={styles.header__regist} href='#'>Регистрация</a>
