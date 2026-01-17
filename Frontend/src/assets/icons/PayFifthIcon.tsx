@@ -1,4 +1,4 @@
-export const PayFifthIcon = ({color = '#956D84'}) => {
+export const PayFifthIcon = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

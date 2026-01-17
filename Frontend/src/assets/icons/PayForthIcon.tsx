@@ -1,4 +1,4 @@
-export const PayForthIcon=({color = '#956D84'}) => {
+export const PayForthIcon=() => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

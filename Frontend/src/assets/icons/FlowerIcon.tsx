@@ -1,4 +1,4 @@
-export const FlowerIcon=({color = '#000000'}) => {
+export const FlowerIcon=() => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

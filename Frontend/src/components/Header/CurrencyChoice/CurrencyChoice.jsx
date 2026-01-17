@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './CurrencyChoice.module.css';
-import {Arrow} from "../../../assets/icons/Arrow.jsx";
+import {Arrow} from "../../../assets/icons/Arrow.tsx";
 
 export const CategoryChoice = () => {
     const [currencyMenuState, setCurrencyMenuState] = useState(false);

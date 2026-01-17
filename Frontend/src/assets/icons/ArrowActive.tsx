@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const ArrowActive=({color = '#000000'}) => {
     return (
         <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -5,3 +7,7 @@ export const ArrowActive=({color = '#000000'}) => {
         </svg>
     )
 }
+
+ArrowActive.propTypes = {
+    color: PropTypes.string.isRequired,
+};

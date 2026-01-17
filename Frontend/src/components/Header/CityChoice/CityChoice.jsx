@@ -1,5 +1,5 @@
 import styles from "./CityChoice.module.css";
-import {Arrow} from "../../../assets/icons/Arrow.jsx";
+import {Arrow} from "../../../assets/icons/Arrow.tsx";
 import {useState} from "react";
 // import OptionList from "./Option/Option.jsx";
 

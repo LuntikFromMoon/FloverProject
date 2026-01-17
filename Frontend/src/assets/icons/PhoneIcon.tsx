@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const PhoneIcon = ({color='#956D84'}) => {
     return (
         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -8,3 +10,7 @@ export const PhoneIcon = ({color='#956D84'}) => {
 
     )
 }
+
+PhoneIcon.propTypes = {
+    color: PropTypes.string.isRequired,
+};

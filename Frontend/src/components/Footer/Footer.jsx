@@ -1,11 +1,11 @@
 import styles from './Footer.module.css';
-import {FlowerIcon} from "../../assets/icons/FlowerIcon.jsx";
-import {PayFirstIcon} from "../../assets/icons/PayFirstIcon.jsx";
-import {PaySecondIcon} from "../../assets/icons/PaySecondIcon.jsx";
-import {PayThirdIcon} from "../../assets/icons/PayThirdIcon.jsx";
-import {PayForthIcon} from "../../assets/icons/PayForthIcon.jsx";
-import {PayFifthIcon} from "../../assets/icons/PayFifthIcon.jsx";
-import {PaySixthIcon} from "../../assets/icons/PaySixthIcon.jsx";
+import {FlowerIcon} from "../../assets/icons/FlowerIcon.tsx";
+import {PayFirstIcon} from "../../assets/icons/PayFirstIcon.tsx";
+import {PaySecondIcon} from "../../assets/icons/PaySecondIcon.tsx";
+import {PayThirdIcon} from "../../assets/icons/PayThirdIcon.tsx";
+import {PayForthIcon} from "../../assets/icons/PayForthIcon.tsx";
+import {PayFifthIcon} from "../../assets/icons/PayFifthIcon.tsx";
+import {PaySixthIcon} from "../../assets/icons/PaySixthIcon.tsx";
 import InfoList from "./FooterInfo/FooterInfo.jsx";
 
 export const Footer = () => {

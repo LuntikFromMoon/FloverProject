@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const CarIcon=({color='#956D84'}) =>{
     return (
         <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,3 +16,7 @@ export const CarIcon=({color='#956D84'}) =>{
 
     )
 }
+
+CarIcon.propTypes = {
+    color: PropTypes.string.isRequired,
+};

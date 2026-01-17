@@ -1,5 +1,5 @@
 import styles from './CatalogItem.module.css';
-import {Basket} from "../../../../assets/icons/Basket(29px)_white.jsx";
+import {Basket} from "../../../../assets/icons/Basket(29px)_white.tsx";
 
 const CatItem = ({image, title, price}) => {
     return (<div className={styles.catalogItemf}>

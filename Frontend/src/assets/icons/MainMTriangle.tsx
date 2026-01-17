@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const MaimMArrow=({color = '#333333'}) => {
     return (
         <svg
@@ -11,3 +13,7 @@ export const MaimMArrow=({color = '#333333'}) => {
         </svg>
     )
 }
+
+MaimMArrow.propTypes = {
+    color: PropTypes.string.isRequired,
+};

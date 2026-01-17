@@ -1,8 +1,8 @@
 import styles from './HeaderInfo.module.css';
-import {HeartIcon} from "../../../assets/icons/HeartIcon.jsx";
-import {CarIcon} from "../../../assets/icons/CarIcon.jsx";
-import {PhoneIcon} from "../../../assets/icons/PhoneIcon.jsx";
-import {UserIcon} from "../../../assets/icons/UserIcon.jsx";
+import {HeartIcon} from "../../../assets/icons/HeartIcon.tsx";
+import {CarIcon} from "../../../assets/icons/CarIcon.tsx";
+import {PhoneIcon} from "../../../assets/icons/PhoneIcon.tsx";
+import {UserIcon} from "../../../assets/icons/UserIcon.tsx";
 // import OptionList from "./Option/Option.jsx";
 import {CategoryChoice} from "../CurrencyChoice/CurrencyChoice.jsx";
 import {LanguageChoice} from "../LanguageChoice/LanguageChoice.jsx";

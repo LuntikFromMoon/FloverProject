@@ -1,9 +1,9 @@
 import styles from "./Subheader.module.css";
-import {FlowerIcon} from "../../../assets/icons/FlowerIcon.jsx";
+import {FlowerIcon} from "../../../assets/icons/FlowerIcon.tsx";
 import {CategoryChoice} from "../CategoryChoice/CategoryChoice.jsx";
-import {LoupeIcon} from "../../../assets/icons/LoupeIcon.jsx";
-import {HeartIconBig} from "../../../assets/icons/HeartIcon(29px).jsx";
-import {Basket} from "../../../assets/icons/Basket(29px).jsx";
+import {LoupeIcon} from "../../../assets/icons/LoupeIcon.tsx";
+import {HeartIconBig} from "../../../assets/icons/HeartIcon(29px).tsx";
+import {Basket} from "../../../assets/icons/Basket(29px).tsx";
 import {CatalogMenu} from "../CatalogMenu/CatalogMenu.jsx";
 
 export const Subheader = () => {

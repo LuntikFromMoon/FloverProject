@@ -4,14 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="Красиво расставила цветы в каталоге(без карусели пока) и поменяла форум на советы">
-      <change afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/Basket(29px)_white.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/assets/pictures/roses.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.module.css" afterDir="false" />
+    <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="feat: Сделала шаблон для карусельки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/Arrow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/Arrow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/ArrowActive.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/ArrowActive.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/Basket(29px).jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/Basket(29px).tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/Basket(29px)_white.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/Basket(29px)_white.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/CarIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/CarIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/CategoryTriangle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/CategoryTriangle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/FlowerIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/FlowerIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/HeartIcon(29px).jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/HeartIcon(29px).tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/HeartIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/HeartIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/LoupeIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/LoupeIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/MainMTriangle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/MainMTriangle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/PayFifthIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/PayFifthIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/PayFirstIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/PayFirstIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/PayForthIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/PayForthIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/PaySecondIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/PaySecondIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/PaySixthIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/PaySixthIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/PayThirdIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/PayThirdIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/PhoneIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/PhoneIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/UserIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/UserIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/CatalogMenu/CatalogMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/CatalogMenu/CatalogMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/CategoryChoice/CategoryChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/CategoryChoice/CategoryChoice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/CityChoice/CityChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/CityChoice/CityChoice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/CurrencyChoice/CurrencyChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/CurrencyChoice/CurrencyChoice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/HeaderInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/HeaderInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/LanguageChoice/LanguageChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/LanguageChoice/LanguageChoice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/Subheader/Subheader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/Subheader/Subheader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +73,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -60,25 +86,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;catalog&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Test foulder/FloverProject/Frontend/src/assets/icons&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;sshConsole&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "catalog",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Test foulder/FloverProject/Frontend/src/assets/icons",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "terminal",
+    "ts.external.directory.path": "D:\\Test foulder\\FloverProject\\Frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Test foulder\FloverProject\Frontend\src\assets\icons" />
@@ -103,7 +133,11 @@
       <workItem from="1763215866819" duration="5268000" />
       <workItem from="1763247976035" duration="1278000" />
       <workItem from="1763297041415" duration="11233000" />
-      <workItem from="1763317137829" duration="294000" />
+      <workItem from="1763317137829" duration="1892000" />
+      <workItem from="1763319067353" duration="3770000" />
+      <workItem from="1768424069813" duration="1191000" />
+      <workItem from="1768592606686" duration="645000" />
+      <workItem from="1768668969392" duration="3733000" />
     </task>
     <task id="LOCAL-00001" summary="Создала сааамую основу каталога">
       <option name="closed" value="true" />
@@ -121,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763307548721</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: Сделала шаблон для карусельки">
+      <option name="closed" value="true" />
+      <created>1763317475075</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763317475076</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +183,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создала сааамую основу каталога" />
     <MESSAGE value="Красиво расставила цветы в каталоге(без карусели пока) и поменяла форум на советы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Красиво расставила цветы в каталоге(без карусели пока) и поменяла форум на советы" />
+    <MESSAGE value="feat: Сделала шаблон для карусельки" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Сделала шаблон для карусельки" />
   </component>
 </project>

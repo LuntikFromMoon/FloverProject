@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const CategoryTriangle=({color = '#828282'}) => {
     return (
         <svg
@@ -11,3 +13,7 @@ export const CategoryTriangle=({color = '#828282'}) => {
         </svg>
     )
 }
+
+CategoryTriangle.propTypes = {
+    color: PropTypes.string.isRequired,
+};

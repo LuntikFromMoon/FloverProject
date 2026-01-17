@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const LoupeIcon=({color = '#956D84'}) => {
     return (
         <svg
@@ -8,9 +10,13 @@ export const LoupeIcon=({color = '#956D84'}) => {
             viewBox="0 0 19 20"
         >
             <path
-                fill="#956D84"
+                fill={color}
                 d="M18.007 18.822l-5.263-5.263a7.134 7.134 0 001.6-4.505c0-3.954-3.218-7.172-7.172-7.172C3.217 1.882 0 5.1 0 9.054c0 3.954 3.217 7.171 7.172 7.171 1.705 0 3.272-.6 4.505-1.599l5.263 5.263a.378.378 0 00.534 0l.533-.533a.377.377 0 000-.534zM7.172 14.716A5.668 5.668 0 011.51 9.054a5.668 5.668 0 015.662-5.662 5.668 5.668 0 015.661 5.662 5.668 5.668 0 01-5.661 5.662z"
             ></path>
         </svg>
     )
 }
+
+LoupeIcon.propTypes = {
+    color: PropTypes.string.isRequired,
+};
