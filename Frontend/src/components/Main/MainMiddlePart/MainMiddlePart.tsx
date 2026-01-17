@@ -14,6 +14,8 @@ const MainMiddlePart = () => {
             <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
             <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
             <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
+            <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
+            <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
         </div>
     </div>
 };

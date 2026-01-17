@@ -5,40 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="feat: Сделала шаблон для карусельки">
-      <change afterPath="$PROJECT_DIR$/Frontend/src/components/Footer/FooterInfo/FooterInfo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.eslintrc.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/Arrow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/Arrow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/ArrowActive.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/ArrowActive.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/Basket(29px).tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/Basket(29px).tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/Basket(29px)_white.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/Basket(29px)_white.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/CarIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/CarIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/CategoryTriangle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/CategoryTriangle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/HeartIcon(29px).tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/HeartIcon(29px).tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/HeartIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/HeartIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/LoupeIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/LoupeIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/MainMTriangle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/MainMTriangle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/PhoneIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/PhoneIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/icons/UserIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/assets/icons/UserIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Footer/FooterInfo/FooterInfo.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/CatalogMenu/CatalogMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/CatalogMenu/CatalogMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/CategoryChoice/CategoryChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/CategoryChoice/CategoryChoice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/CityChoice/CityChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/CityChoice/CityChoice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/CurrencyChoice/CurrencyChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/CurrencyChoice/CurrencyChoice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/HeaderInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/HeaderInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/Option/Option.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/Option/Option.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/LanguageChoice/LanguageChoice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/LanguageChoice/LanguageChoice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/Subheader/Subheader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/Subheader/Subheader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainBotPart/ForumItem/ForumItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainBotPart/ForumItem/ForumItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainBotPart/MainBotPart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainBotPart/MainBotPart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainTopPart/MainTopPart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainTopPart/MainTopPart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Menu/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,29 +59,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "catalog",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Test foulder/FloverProject/Frontend/src/assets/icons",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "terminal",
-    "ts.external.directory.path": "D:\\Test foulder\\FloverProject\\Frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;catalog&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Test foulder/FloverProject/Frontend/src/assets/icons&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Test foulder\\FloverProject\\Frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Test foulder\FloverProject\Frontend\src\assets\icons" />
@@ -139,7 +110,8 @@
       <workItem from="1763319067353" duration="3770000" />
       <workItem from="1768424069813" duration="1191000" />
       <workItem from="1768592606686" duration="645000" />
-      <workItem from="1768668969392" duration="8166000" />
+      <workItem from="1768668969392" duration="9188000" />
+      <workItem from="1768681222342" duration="1989000" />
     </task>
     <task id="LOCAL-00001" summary="Создала сааамую основу каталога">
       <option name="closed" value="true" />

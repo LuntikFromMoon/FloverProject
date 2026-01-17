@@ -8,11 +8,15 @@
 }
 .catalogImg{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 .catalogItem{
     margin-top: 20px;
+}
+.catalogItem:hover .catalogImg {
+    transform: scale(1.05);
 }
 .catalogTitle{
     font-family: MuseoSansCyrl, sans-serif;
@@ -37,6 +41,9 @@
     justify-content: center;
     background-color: rgba(184, 117, 150, 0.71);
     text-decoration: none;
+}
+.orderButton:hover{
+    background-color: rgb(202, 118, 154);
 }
 .orderButton__text{
     margin-left: 3%;
