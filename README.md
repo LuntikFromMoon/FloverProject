@@ -117,9 +117,6 @@ php bin/console doctrine:migrations:generate
 
 # Выполнение миграций
 php bin/console doctrine:migrations:migrate
-
-# Загрузка фикстур (если есть)
-php bin/console doctrine:fixtures:load
 ```
 
 ### Frontend
@@ -140,10 +137,10 @@ npm run lint
 Основные эндпоинты API:
 
 - `GET /api/products` — Получить список всех продуктов
-- `GET /api/product/{id}` — Получить продукт по ID
-- `POST /api/product` — Создать новый продукт
-- `PUT /api/product/{id}` — Обновить продукт
-- `DELETE /api/product/{id}` — Удалить продукт
+- `GET /api/products/{id}` — Получить продукт по ID
+- `POST /api/products` — Создать новый продукт
+- `PUT /api/products/{id}` — Обновить продукт
+- `DELETE /api/products/{id}` — Удалить продукт
 
 ## База данных
 

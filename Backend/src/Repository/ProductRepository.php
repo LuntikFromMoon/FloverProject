@@ -25,4 +25,15 @@ class ProductRepository extends ServiceEntityRepository
         $this->getEntityManager()->remove($product);
         $this->getEntityManager()->flush();
     }
+
+    public function deleteById(int $id): void
+    {
+        $product = $this->getEntityManager()->getRepository(Product::class)->find($id);
+        if (!$product) {
+            throw new \RuntimeException();
+        }
+
+        $this->getEntityManager()->remove($product);
+        $this->getEntityManager()->flush();
+    }
 }

@@ -42,4 +42,14 @@ class ProductService
 
         return $product;
     }
+
+    public function deleteProduct(int $id): void
+    {
+        $product = $this->productRepository->find($id);
+        if (!$product) {
+            throw new \RuntimeException("Product not found");
+        }
+
+        $this->productRepository->deleteById($id);
+    }
 }

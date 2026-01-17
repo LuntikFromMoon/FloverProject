@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="feat: Создал скелет бэкенд приложения">
-      <change beforePath="$PROJECT_DIR$/.idea/FloverProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FloverProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="feat: Сделал загрузку товаров в каталоге из БД, создал api-endpoint для взятие всех товаров и создания нового товара, написал README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/config/doctrine/Product.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config/doctrine/Product.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Entity/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/Entity/ProductCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Entity/ProductCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/Repository/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/HeaderInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/HeaderInfo/HeaderInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Repository/ProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Service/ProductService.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Service/ProductService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="backend/catalog" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,7 +112,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;backend/catalog&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -161,6 +153,7 @@
       <workItem from="1768320159226" duration="14999000" />
       <workItem from="1768408246522" duration="11562000" />
       <workItem from="1768486865404" duration="10444000" />
+      <workItem from="1768656990928" duration="373000" />
     </task>
     <servers />
   </component>
@@ -177,5 +170,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Сделал загрузку товаров в каталоге из БД, создал api-endpoint для взятие всех товаров и создания нового товара, написал README" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Сделал загрузку товаров в каталоге из БД, создал api-endpoint для взятие всех товаров и создания нового товара, написал README" />
   </component>
 </project>

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Repository\ProductRepository;
 use App\Service\ProductService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,15 +17,14 @@ class ProductController extends AbstractController
 {
     public function __construct(
         private ProductService $productService,
-        private EntityManagerInterface $entityManager
+        private ProductRepository $productRepository,
     )
     {}
 
-    #[Route('/api/products', name: 'api_products', methods: ['GET'])]
+    #[Route('/api/products', name: 'api_products_show', methods: ['GET'])]
     public function getProducts(): JsonResponse
     {
-        $productRepository = $this->entityManager->getRepository(Product::class);
-        $products = $productRepository->findAll();
+        $products = $this->productRepository->findAll();
 
         $data = array_map(function ($product) {
             return [
@@ -51,5 +51,48 @@ class ProductController extends AbstractController
         $this->productService->createProduct($data);
 
         return $this->json(['status' => 'success']);
+    }
+
+    #[Route('/api/products/{id}', name: 'api_get_product', methods: ['GET'])]
+    public function getProduct(int $id): JsonResponse
+    {
+        $product = $this->productRepository->find($id);
+        if (!$product) {
+            return $this->json([
+                'status' => 'error',
+                'message' => 'Product not found',
+            ], 404);
+        }
+
+        return $this->json([
+            'status' => 'success',
+            'product' => [
+                'id' => $product->getId(),
+                'name' => $product->getName(),
+                'description' => $product->getDescription(),
+                'price' => $product->getPrice(),
+                'imagePath' => $product->getImagePath(),
+                'category' => [
+                    'id' => $product->getProductCategory()->getId(),
+                    'name' => $product->getProductCategory()->getName(),
+                ],
+            ],
+        ]);
+    }
+
+    #[Route('/api/products/{id}', name: 'api_delete_product', methods: ['DELETE'])]
+    public function deleteProduct(int $id): JsonResponse
+    {
+        try {
+
+        } catch () {
+
+        }
+        $this->productService->deleteProduct($id);
+
+        return $this->json([
+            'status' => 'success',
+            'message' => "Product with id $id has been deleted",
+        ]);
     }
 }
