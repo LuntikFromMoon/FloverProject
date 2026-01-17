@@ -18,5 +18,5 @@ export const LoupeIcon=({color = '#956D84'}) => {
 }
 
 LoupeIcon.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

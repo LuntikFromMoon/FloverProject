@@ -18,5 +18,5 @@ export const CarIcon=({color='#956D84'}) =>{
 }
 
 CarIcon.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

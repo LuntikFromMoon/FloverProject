@@ -15,5 +15,5 @@ export const MaimMArrow=({color = '#333333'}) => {
 }
 
 MaimMArrow.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

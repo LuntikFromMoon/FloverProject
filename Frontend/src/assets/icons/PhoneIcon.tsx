@@ -12,5 +12,5 @@ export const PhoneIcon = ({color='#956D84'}) => {
 }
 
 PhoneIcon.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

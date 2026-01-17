@@ -1,10 +1,10 @@
 import styles from "./Subheader.module.css";
-import {FlowerIcon} from "../../../assets/icons/FlowerIcon.tsx";
-import {CategoryChoice} from "../CategoryChoice/CategoryChoice.jsx";
-import {LoupeIcon} from "../../../assets/icons/LoupeIcon.tsx";
-import {HeartIconBig} from "../../../assets/icons/HeartIcon(29px).tsx";
-import {Basket} from "../../../assets/icons/Basket(29px).tsx";
-import {CatalogMenu} from "../CatalogMenu/CatalogMenu.jsx";
+import {FlowerIcon} from "../../../assets/icons/FlowerIcon";
+import {CategoryChoice} from "../CategoryChoice/CategoryChoice";
+import {LoupeIcon} from "../../../assets/icons/LoupeIcon";
+import {HeartIconBig} from "../../../assets/icons/HeartIcon(29px)";
+import {Basket} from "../../../assets/icons/Basket(29px)";
+import {CatalogMenu} from "../CatalogMenu/CatalogMenu";
 
 export const Subheader = () => {
     return (<div className={styles.header__bottom}>

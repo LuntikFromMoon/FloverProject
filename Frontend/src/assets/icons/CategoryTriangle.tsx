@@ -15,5 +15,5 @@ export const CategoryTriangle=({color = '#828282'}) => {
 }
 
 CategoryTriangle.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

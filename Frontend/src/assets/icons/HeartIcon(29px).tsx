@@ -17,5 +17,5 @@ export const HeartIconBig=({color = '#956D84'}) => {
 }
 
 HeartIconBig.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

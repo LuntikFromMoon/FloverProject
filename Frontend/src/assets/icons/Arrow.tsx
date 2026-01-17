@@ -9,5 +9,5 @@ export const Arrow=({color   = '#FFFFFF'}) => {
 }
 
 Arrow.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

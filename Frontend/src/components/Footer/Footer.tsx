@@ -1,12 +1,12 @@
 import styles from './Footer.module.css';
-import {FlowerIcon} from "../../assets/icons/FlowerIcon.tsx";
-import {PayFirstIcon} from "../../assets/icons/PayFirstIcon.tsx";
-import {PaySecondIcon} from "../../assets/icons/PaySecondIcon.tsx";
-import {PayThirdIcon} from "../../assets/icons/PayThirdIcon.tsx";
-import {PayForthIcon} from "../../assets/icons/PayForthIcon.tsx";
-import {PayFifthIcon} from "../../assets/icons/PayFifthIcon.tsx";
-import {PaySixthIcon} from "../../assets/icons/PaySixthIcon.tsx";
-import InfoList from "./FooterInfo/FooterInfo.jsx";
+import {FlowerIcon} from "../../assets/icons/FlowerIcon";
+import {PayFirstIcon} from "../../assets/icons/PayFirstIcon";
+import {PaySecondIcon} from "../../assets/icons/PaySecondIcon";
+import {PayThirdIcon} from "../../assets/icons/PayThirdIcon";
+import {PayForthIcon} from "../../assets/icons/PayForthIcon";
+import {PayFifthIcon} from "../../assets/icons/PayFifthIcon";
+import {PaySixthIcon} from "../../assets/icons/PaySixthIcon";
+import InfoList from "./FooterInfo/FooterInfo";
 
 export const Footer = () => {
     return (<div className={styles.footer}>

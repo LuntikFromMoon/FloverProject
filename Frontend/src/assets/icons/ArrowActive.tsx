@@ -9,5 +9,5 @@ export const ArrowActive=({color = '#000000'}) => {
 }
 
 ArrowActive.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

@@ -11,5 +11,5 @@ export const HeartIcon=({color = '#956D84'}) => {
 }
 
 HeartIcon.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

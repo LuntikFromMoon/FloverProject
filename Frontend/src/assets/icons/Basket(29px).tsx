@@ -27,5 +27,5 @@ export const Basket=({color = '#956D84'}) => {
 }
 
 Basket.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

@@ -1,5 +1,5 @@
 import styles from './CatalogMenu.module.css';
-import {MaimMArrow} from "../../../assets/icons/MainMTriangle.tsx";
+import {MaimMArrow} from "../../../assets/icons/MainMTriangle";
 import {useState} from "react";
 
 export const CatalogMenu = () => {

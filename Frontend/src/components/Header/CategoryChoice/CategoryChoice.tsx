@@ -1,4 +1,4 @@
-import {CategoryTriangle} from "../../../assets/icons/CategoryTriangle.tsx";
+import {CategoryTriangle} from "../../../assets/icons/CategoryTriangle";
 import { useState } from 'react';
 import styles from './CategoryChoice.module.css';
 

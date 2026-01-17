@@ -1,6 +1,12 @@
 import styles from './ForumItem.module.css';
 
-const ForumList = ({image, title, option}) => {
+interface ForumListProps {
+    image: string;
+    title: string;
+    option: string;
+}
+
+const ForumList = ({image, title, option}: ForumListProps) => {
     return (<div className={styles.forumItemf}>
         <img src={image} alt='flower img' className={styles.forumImg}/>
     <div className={styles.forumItem}>

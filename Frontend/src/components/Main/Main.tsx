@@ -1,7 +1,7 @@
 import styles from "./Main.module.css";
-import MainTopPart from './MainTopPart/MainTopPart.jsx';
-import MainBotPart from "./MainBotPart/MainBotPart.jsx";
-import MainMiddlePart from "./MainMiddlePart/MainMiddlePart.jsx";
+import MainTopPart from './MainTopPart/MainTopPart';
+import MainBotPart from "./MainBotPart/MainBotPart";
+import MainMiddlePart from "./MainMiddlePart/MainMiddlePart.js";
 
 export const Main = () => {
     return ( <div className={styles.main}>

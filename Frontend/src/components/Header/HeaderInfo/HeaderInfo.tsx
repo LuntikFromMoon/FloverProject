@@ -1,12 +1,12 @@
 import styles from './HeaderInfo.module.css';
-import {HeartIcon} from "../../../assets/icons/HeartIcon.tsx";
-import {CarIcon} from "../../../assets/icons/CarIcon.tsx";
-import {PhoneIcon} from "../../../assets/icons/PhoneIcon.tsx";
-import {UserIcon} from "../../../assets/icons/UserIcon.tsx";
-// import OptionList from "./Option/Option.jsx";
-import {CategoryChoice} from "../CurrencyChoice/CurrencyChoice.jsx";
-import {LanguageChoice} from "../LanguageChoice/LanguageChoice.jsx";
-import {CityChoice} from "../CityChoice/CityChoice.jsx";
+import {HeartIcon} from "../../../assets/icons/HeartIcon";
+import {CarIcon} from "../../../assets/icons/CarIcon";
+import {PhoneIcon} from "../../../assets/icons/PhoneIcon";
+import {UserIcon} from "../../../assets/icons/UserIcon";
+// import OptionList from "./Option/Option.tsx";
+import {CategoryChoice} from "../CurrencyChoice/CurrencyChoice";
+import {LanguageChoice} from "../LanguageChoice/LanguageChoice";
+import {CityChoice} from "../CityChoice/CityChoice";
 
 const HeaderInfo = () => {
     return <div className={styles.header__top}>

@@ -12,5 +12,5 @@ export const UserIcon = ({color = '#956D84'}) => {
 }
 
 UserIcon.propTypes = {
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
 };

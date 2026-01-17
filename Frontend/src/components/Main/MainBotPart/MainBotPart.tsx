@@ -1,5 +1,5 @@
 import styles from './MainBotPart.module.css';
-import ForumList from "./ForumItem/ForumItem.jsx";
+import ForumList from "./ForumItem/ForumItem";
 import {main_forum_pic} from "../../../assets/pictures/main_forum_pic.js";
 
 const MainBotPart = () => {

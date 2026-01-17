@@ -1,7 +1,7 @@
 import styles from "./CityChoice.module.css";
-import {Arrow} from "../../../assets/icons/Arrow.tsx";
+import {Arrow} from "../../../assets/icons/Arrow";
 import {useState} from "react";
-// import OptionList from "./Option/Option.jsx";
+// import OptionList from "./Option/Option.tsx";
 
 export const CityChoice = () => {
     const [cityMenuState, setCityMenuState] = useState(false);

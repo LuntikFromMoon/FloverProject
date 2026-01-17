@@ -1,6 +1,6 @@
 import styles from './MainMiddlePart.module.css';
 import catalog_photo from "../../../assets/pictures/roses.jpg";
-import CatItem from "./CatalogItem/CatalogItem.jsx";
+import CatItem from "./CatalogItem/CatalogItem";
 
 const MainMiddlePart = () => {
     return <div className={styles.main__middle}>

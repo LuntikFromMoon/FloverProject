@@ -1,5 +1,5 @@
 import styles from "./LanguageChoice.module.css";
-import {Arrow} from "../../../assets/icons/Arrow.tsx";
+import {Arrow} from "../../../assets/icons/Arrow";
 import {useState} from "react";
 
 
