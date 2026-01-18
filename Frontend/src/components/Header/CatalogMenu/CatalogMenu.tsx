@@ -1,4 +1,5 @@
 import styles from './CatalogMenu.module.css';
+import {Link} from 'react-router-dom';
 import {MaimMArrow} from "../../../assets/icons/MainMTriangle";
 import {useState} from "react";
 
@@ -20,7 +21,7 @@ export const CatalogMenu = () => {
                     <p className={styles.header__categoryMenuItem}>Корзины с цветами</p>
                     <p className={styles.header__categoryMenuItem}>Букет невесты</p>
                     <p className={styles.header__categoryMenuItem}>Монобукеты</p>
-                    <p className={styles.header__categoryMenuItem}>Другое</p>
+                    <Link to="/catalog"><p className={styles.header__categoryMenuItem}>Другое</p></Link>
                 </div>
             ) : (
                 <div className={styles.header__categoryMenu}>
