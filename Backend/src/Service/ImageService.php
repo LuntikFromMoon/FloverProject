@@ -27,6 +27,14 @@ class ImageService
         return uniqid("product_image_", true) . ".$extension";
     }
 
+    public function deleteImage(string $imagePath): void
+    {
+        $fullPath = $this->uploadDir . $imagePath;
+        if (file_exists($fullPath)) {
+            unlink($fullPath);
+        }
+    }
+
     // TODO: Ограничить возможные расширения
     public function getMimeTypeByBase64(string $base64): string
     {

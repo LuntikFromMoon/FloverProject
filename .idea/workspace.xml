@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="feat: Сделал загрузку товаров в каталоге из БД, создал api-endpoint для взятие всех товаров и создания нового товара, написал README">
+    <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="feat: Сделал API endpoint для получения и удаления продукта по айди">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/config/doctrine/Product.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config/doctrine/Product.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/config/doctrine/Shop.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/config/doctrine/Shop.orm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Repository/ProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Entity/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Service/ImageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Service/ImageService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/src/Service/ProductService.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Service/ProductService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/public/catalog/product_image_69691b834e5109.88374346.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/public/catalog/product_image_69691b87326a09.94794926.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainTopPart/MainTopPart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainTopPart/MainTopPart.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="backend/catalog" />
+        <entry key="$PROJECT_DIR$" value="backend/api-order" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -154,6 +160,7 @@
       <workItem from="1768408246522" duration="11562000" />
       <workItem from="1768486865404" duration="10444000" />
       <workItem from="1768656990928" duration="373000" />
+      <workItem from="1768739533788" duration="6423000" />
     </task>
     <servers />
   </component>

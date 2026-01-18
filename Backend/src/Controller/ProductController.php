@@ -10,16 +10,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Doctrine\ORM\EntityManagerInterface;
-use App\Entity\Product;
 
 class ProductController extends AbstractController
 {
     public function __construct(
-        private ProductService $productService,
+        private ProductService    $productService,
         private ProductRepository $productRepository,
     )
-    {}
+    {
+    }
 
     #[Route('/api/products', name: 'api_products_show', methods: ['GET'])]
     public function getProducts(): JsonResponse
@@ -43,8 +42,8 @@ class ProductController extends AbstractController
         return $this->json($data);
     }
 
-    #[Route('/api/products', name: 'api_products_create', methods: ['POST'])]
-    public function addProduct(Request $request): JsonResponse
+    #[Route('/api/products', name: 'api_createproduct', methods: ['POST'])]
+    public function createProduct(Request $request): JsonResponse
     {
         $data = $request->toArray();
 
@@ -80,14 +79,39 @@ class ProductController extends AbstractController
         ]);
     }
 
+    #[Route('/api/products/{id}', name: 'api_update_product', methods: ['PUT'])]
+    public function updateProduct(Request $request, int $id): JsonResponse
+    {
+        $data = $request->toArray();
+
+        try {
+            $product = $this->productService->updateProduct($id, $data);
+        } catch (\Exception $e) {
+            return $this->json([
+                'status' => 'error',
+                'message' => $e->getMessage(),
+            ]);
+        }
+
+        return $this->json([
+            'status' => 'success',
+            'product' => [
+                'id' => $id,
+                'name' => $product->getName(),
+                'description' => $product->getDescription(),
+                'price' => $product->getPrice(),
+                'imagePath' => $product->getImagePath(),
+                'category' => [
+                    'id' => $product->getProductCategory()->getId(),
+                    'name' => $product->getProductCategory()->getName(),
+                ]
+            ]
+        ]);
+    }
+
     #[Route('/api/products/{id}', name: 'api_delete_product', methods: ['DELETE'])]
     public function deleteProduct(int $id): JsonResponse
     {
-        try {
-
-        } catch () {
-
-        }
         $this->productService->deleteProduct($id);
 
         return $this->json([

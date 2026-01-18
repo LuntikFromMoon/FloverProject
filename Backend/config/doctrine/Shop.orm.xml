@@ -19,7 +19,6 @@
             <generator strategy="IDENTITY"/>
         </id>
 
-        <field name="name" column="name" type="string" length="255" nullable="false"/>
         <field name="city" column="city" type="string" length="255" nullable="false"/>
         <field name="street" column="street" type="string" length="255" nullable="false"/>
         <field name="build" column="build" type="string" length="255" nullable="false"/>
