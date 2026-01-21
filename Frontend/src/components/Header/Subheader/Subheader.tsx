@@ -5,13 +5,16 @@ import {LoupeIcon} from "../../../assets/icons/LoupeIcon";
 import {HeartIconBig} from "../../../assets/icons/HeartIcon(29px)";
 import {Basket} from "../../../assets/icons/Basket(29px)";
 import {CatalogMenu} from "../CatalogMenu/CatalogMenu";
+import {Link} from "react-router-dom";
 
 export const Subheader = () => {
     return (<div className={styles.header__bottom}>
         <div className={styles.header__logo}>
-            <FlowerIcon/>
-            <p className={styles.logoTitle}>YoFlower</p>
-            <p className={styles.logoSubtitle}>Доставка цветов и подарков</p>
+            <Link to="/">
+                <FlowerIcon/>
+                <p className={styles.logoTitle}>YoFlower</p>
+                <p className={styles.logoSubtitle}>Доставка цветов и подарков</p>
+            </Link>
         </div>
         <div className={styles.header__searchBox}>
             <div className={styles.header__searchProd}>

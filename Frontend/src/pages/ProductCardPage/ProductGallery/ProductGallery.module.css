@@ -7,7 +7,8 @@
 
 .mainImage {
     width: 100%;
-    height: 500px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     overflow: hidden;
     background: #f8f8f8;
 }

@@ -6,13 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f5852584-5a4f-46f6-95bb-617e80cc8b36" name="Changes" comment="feat: Сделала шаблон для карусельки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/CatalogMenu/CatalogMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/CatalogMenu/CatalogMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/Subheader/Subheader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/Subheader/Subheader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Header/Subheader/Subheader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Header/Subheader/Subheader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/CatalogItem/CatalogItem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Menu/Menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/pages/HomePage/Menu/Menu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/pages/HomePage/Menu/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/components/Main/MainMiddlePart/MainMiddlePart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/pages/CatalogPage/CatalogItem/CatalogItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/pages/CatalogPage/CatalogItem/CatalogItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/pages/CatalogPage/CatalogMain.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/pages/CatalogPage/CatalogMain.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/pages/CatalogPage/CatalogMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/pages/CatalogPage/CatalogMain.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/pages/ProductCardPage/ProductCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/pages/ProductCardPage/ProductCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/pages/ProductCardPage/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/pages/ProductCardPage/ProductCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/pages/ProductCardPage/ProductGallery/ProductGallery.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/pages/ProductCardPage/ProductGallery/ProductGallery.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +28,8 @@
       <list>
         <option value="JSX File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -118,7 +122,10 @@
       <workItem from="1768424069813" duration="1191000" />
       <workItem from="1768592606686" duration="645000" />
       <workItem from="1768668969392" duration="9188000" />
-      <workItem from="1768681222342" duration="20698000" />
+      <workItem from="1768681222342" duration="21177000" />
+      <workItem from="1768745050786" duration="1461000" />
+      <workItem from="1768895272183" duration="2897000" />
+      <workItem from="1769006717446" duration="1838000" />
     </task>
     <task id="LOCAL-00001" summary="Создала сааамую основу каталога">
       <option name="closed" value="true" />

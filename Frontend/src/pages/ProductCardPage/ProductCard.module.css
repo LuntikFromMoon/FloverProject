@@ -49,10 +49,14 @@
 }
 .productCard__hint{
     width: 80%;
-    display: flex;
-    margin: auto auto 60px auto;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    row-gap: 10px;
-    column-gap: 2%;
+    margin: 0 auto 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+.productCard__hint a:hover,
+.productCard__hint a:active,
+.productCard__hint a{
+    text-decoration: none;
+
 }

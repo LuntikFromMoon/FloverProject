@@ -5,6 +5,7 @@ import CounterWithButton from "../../components/Counter/CounterWithButton"
 import catalog_photo from "../../assets/pictures/roses.jpg";
 import catalog_photo2 from "../../assets/pictures/image 26 (1).png";
 import catalog_photo3 from "../../assets/pictures/main_right_first.png";
+import {Link} from "react-router-dom";
 
 export const ProductCard = () => {
     // Функция для добавления в корзину
@@ -40,10 +41,18 @@ export const ProductCard = () => {
             </div>
             <p className={styles.productCard__hintText}>Сопутствующие товары</p>
             <div className={styles.productCard__hint}>
-                <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
-                <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
-                <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
-                <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
+                <Link to="/product">
+                    <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
+                </Link>
+                <Link to="/product">
+                    <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
+                </Link>
+                <Link to="/product">
+                    <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
+                </Link>
+                <Link to="/product">
+                    <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
+                </Link>
             </div>
         </div>
     )

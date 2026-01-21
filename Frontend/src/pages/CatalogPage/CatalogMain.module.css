@@ -39,4 +39,19 @@
     overflow-x: hidden;
     row-gap: 10px;
     column-gap: 2%;
+    justify-content: space-between;
+}
+.catalogMain__catalog {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.catalogMain__catalog a:hover,
+.catalogMain__catalog a:active,
+.catalogMain__catalog a{
+    text-decoration: none;
+
 }
