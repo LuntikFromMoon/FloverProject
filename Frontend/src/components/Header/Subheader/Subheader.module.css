@@ -8,6 +8,12 @@
 .header__logo{
     text-align: center;
 }
+.header__logo a:hover,
+.header__logo a:active,
+.header__logo a{
+    text-decoration: none;
+
+}
 .logoTitle{
     font-family: Attentica4F, "Segoe Print", sans-serif;
     font-weight: 500;

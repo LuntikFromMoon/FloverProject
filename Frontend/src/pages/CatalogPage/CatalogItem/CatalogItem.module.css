@@ -1,9 +1,9 @@
 .catalogItemf{
-    /*width: 23.5%;*/
+    /*width: 32%;*/
 }
 .catalogImgContainer{
     width: 100%;
-    max-height: 500px;
+    height: 300px;
     overflow: hidden;
 }
 .catalogImg{
@@ -33,6 +33,7 @@
 }
 .orderButton{
     display: flex;
+    border: 1px solid #e4acd3;
     border-radius: 7px;
     height: 50px;
     margin-top: 10px;

@@ -1,0 +1,62 @@
+.productCard__review{
+    margin: 60px auto auto auto;
+    width: 70%;
+    display: flex;
+    gap: 5%;
+}
+.productCard__productGallery{
+    width: 50%;
+}
+.productCard__description{
+    width: 40%;
+}
+.productCard__name{
+    margin-top: 5px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: #333333;
+}
+.productCard__price{
+    margin: 10px 0 10px 0;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #956D84;
+}
+.productCard__descName{
+    margin-top: 30px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.79);
+}
+.productCard__descText{
+    margin-top: 5px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.48);
+}
+.productCard__hintText{
+    margin: 60px 0 30px 0;
+    text-align: center;
+    width: 100%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #333333;
+}
+.productCard__hint{
+    width: 80%;
+    margin: 0 auto 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+.productCard__hint a:hover,
+.productCard__hint a:active,
+.productCard__hint a{
+    text-decoration: none;
+
+}
