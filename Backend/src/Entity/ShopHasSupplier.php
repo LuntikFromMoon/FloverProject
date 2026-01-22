@@ -6,8 +6,8 @@ class ShopHasSupplier
 {
     public function __construct(
         private int $id,
-        private int  $shopId,
-        private int $supplierId,
+        private Shop $shop,
+        private Supplier $supplier,
     ) {}
 
     public function getId(): int
@@ -15,13 +15,13 @@ class ShopHasSupplier
         return $this->id;
     }
 
-    public function getShopId(): int
+    public function getShop(): Shop
     {
-        return $this->shopId;
+        return $this->shop;
     }
 
-    public function getSupplierId(): int
+    public function getSupplier(): Supplier
     {
-        return $this->supplierId;
+        return $this->supplier;
     }
 }

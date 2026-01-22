@@ -7,10 +7,10 @@ namespace App\Entity;
 class Order
 {
     public function __construct(
-        private int $id,
-        private int $shopId,
-        private int $statusId,
-        private int $userId,
+        private ?int $id,
+        private Shop $shop,
+        private OrderStatus $status,
+        private User $user,
         private \DateTime $createdAt,
         private string $address,
         private float $totalPrice,
@@ -21,24 +21,19 @@ class Order
         return $this->id;
     }
 
-    public function getProductId(): int
+    public function getShop(): Shop
     {
-        return $this->productId;
+        return $this->shop;
     }
 
-    public function getShopId(): int
+    public function getStatus(): OrderStatus
     {
-        return $this->shopId;
+        return $this->status;
     }
 
-    public function getStatusId(): int
+    public function getUser(): User
     {
-        return $this->statusId;
-    }
-
-    public function getUserId(): int
-    {
-        return $this->userId;
+        return $this->user;
     }
 
     public function getCreatedAt(): \DateTime

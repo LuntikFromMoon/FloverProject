@@ -42,7 +42,7 @@ class ProductController extends AbstractController
         return $this->json($data);
     }
 
-    #[Route('/api/products', name: 'api_createproduct', methods: ['POST'])]
+    #[Route('/api/products', name: 'api_create_product', methods: ['POST'])]
     public function createProduct(Request $request): JsonResponse
     {
         $data = $request->toArray();

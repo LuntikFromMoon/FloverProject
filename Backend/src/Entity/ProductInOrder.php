@@ -1,13 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Entity;
 
 class ProductInOrder
 {
     public function __construct(
-        private int $id,
-        private int $productId,
-        private int $orderId,
+        private ?int $id,
+        private Product $product,
+        private Order $order,
         private int $productQuantity,
     ) {}
 
@@ -16,14 +18,14 @@ class ProductInOrder
         return $this->id;
     }
 
-    public function getProductId(): int
+    public function getProduct(): Product
     {
-        return $this->productId;
+        return $this->product;
     }
 
-    public function getOrderId(): int
+    public function getOrder(): Order
     {
-        return $this->orderId;
+        return $this->order;
     }
 
     public function getProductQuantity(): int

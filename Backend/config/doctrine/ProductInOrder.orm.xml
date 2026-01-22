@@ -11,11 +11,11 @@
             <generator strategy="IDENTITY"/>
         </id>
 
-        <many-to-one field="productId" target-entity="App\Entity\Product">
+        <many-to-one field="product" target-entity="App\Entity\Product">
             <join-column name="product_id" referenced-column-name="id" nullable="false"/>
         </many-to-one>
 
-        <many-to-one field="orderId" target-entity="App\Entity\Order">
+        <many-to-one field="order" target-entity="App\Entity\Order">
             <join-column name="order_id" referenced-column-name="id" nullable="false"/>
         </many-to-one>
 
