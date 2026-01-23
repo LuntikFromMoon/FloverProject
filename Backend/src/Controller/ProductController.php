@@ -21,9 +21,23 @@ class ProductController extends AbstractController
     }
 
     #[Route('/api/products', name: 'api_products_show', methods: ['GET'])]
-    public function getProducts(): JsonResponse
+    public function getProducts(Request $request): JsonResponse
     {
-        $products = $this->productRepository->findAll();
+        $category = $request->query->get('category');
+        $minPrice = $request->query->get('minPrice');
+        $maxPrice = $request->query->get('maxPrice');
+        $search = $request->query->get('search');
+        $sort = $request->query->get('sort');
+        $order = $request->query->get('order', 'asc');
+
+        $products = $this->productRepository->findWithFilters(
+            $category !== null ? (int) $category : null,
+            $minPrice !== null ? (float) $minPrice : null,
+            $maxPrice !== null ? (float) $maxPrice : null,
+            $search,
+            $sort,
+            $order
+        );
 
         $data = array_map(function ($product) {
             return [
@@ -78,6 +92,7 @@ class ProductController extends AbstractController
             ],
         ]);
     }
+
 
     #[Route('/api/products/{id}', name: 'api_update_product', methods: ['PUT'])]
     public function updateProduct(Request $request, int $id): JsonResponse
