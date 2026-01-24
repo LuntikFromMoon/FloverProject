@@ -152,4 +152,15 @@ class OrderController extends AbstractController
             ], 500);
         }
     }
+
+    #[Route('/api/statistics/sales-by-category', name: 'api_sales_by_category', methods: ['GET'])]
+    public function getSalesByCategory(): JsonResponse
+    {
+        $statistics = $this->orderService->getSalesByCategory();
+
+        return $this->json([
+            'status' => 'success',
+            'statistics' => $statistics,
+        ]);
+    }
 }

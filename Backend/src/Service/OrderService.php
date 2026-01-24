@@ -156,4 +156,9 @@ class OrderService
     {
         return OrderStatus::getAvailableStatuses($currentStatusName);
     }
+
+    public function getSalesByCategory(): array
+    {
+        return $this->productInOrderRepository->getSalesByCategory();
+    }
 }
