@@ -38,7 +38,13 @@ class OrderController extends AbstractController
                 ],
                 'status' => $order->getStatus()->getName(),
                 'createdAt' => $order->getCreatedAt()->format('Y-m-d H:i:s'),
+                'deliveryDate' => $order->getDeliveryDate()->format('Y-m-d H:i:s'),
                 'address' => $order->getAddress(),
+                'recipientName' => $order->getRecipientName(),
+                'recipientPhone' => $order->getRecipientPhone(),
+                'senderName' => $order->getSenderName(),
+                'senderPhone' => $order->getSenderPhone(),
+                'description' => $order->getDescription(),
                 'totalPrice' => $order->getTotalPrice(),
             ]
         ]);
@@ -89,7 +95,6 @@ class OrderController extends AbstractController
                 'id' => $order->getId(),
                 'shop' => [
                     'shopId' => $order->getShop()->getId(),
-                    'name' => $order->getShop()->getName(),
                     'city' => $order->getShop()->getCity(),
                     'street' => $order->getShop()->getStreet(),
                     'build' => $order->getShop()->getBuild(),

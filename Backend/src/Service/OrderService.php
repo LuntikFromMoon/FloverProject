@@ -46,6 +46,18 @@ class OrderService
             throw new \RuntimeException("Products array is required");
         }
 
+        $deliveryDateStr = $data['deliveryDate'] . ' ' . $data['deliveryTime'];
+        $deliveryFullDate = \DateTime::createFromFormat('d.m.Y H:i', $deliveryDateStr, new \DateTimeZone('Europe/Moscow'));
+
+        if (!$deliveryFullDate) {
+            throw new \RuntimeException('Invalid delivery date or time format');
+        }
+
+        $minDeliveryTime = new \DateTime('+1 hour');
+        if ($deliveryFullDate < $minDeliveryTime) {
+            throw new \RuntimeException('Delivery date must be at least 1 hour from now');
+        }
+
         try {
             $this->entityManager->beginTransaction();
 
@@ -54,8 +66,14 @@ class OrderService
                 $shop,
                 $status,
                 $user,
-                new \DateTime(),
+                new \DateTime('now', new \DateTimeZone('Europe/Moscow')),
+                $deliveryFullDate,
                 $data['address'],
+                $data['recipientName'],
+                $data['recipientPhone'],
+                $data['senderName'],
+                $data['senderPhone'],
+                $data['description'],
                 $data['totalPrice'],
             );
 

@@ -12,9 +12,75 @@ class Order
         private OrderStatus $status,
         private User $user,
         private \DateTime $createdAt,
+        private \DateTime $deliveryDate,
         private string $address,
+        private string $recipientName,
+        private string $recipientPhone,
+        private string $senderName,
+        private string $senderPhone,
+        private string $description,
         private float $totalPrice,
     ) {}
+
+    public function getDeliveryDate(): \DateTime
+    {
+        return $this->deliveryDate;
+    }
+
+    public function setDeliveryDate(\DateTime $deliveryDate): void
+    {
+        $this->deliveryDate = $deliveryDate;
+    }
+
+    public function getRecipientName(): string
+    {
+        return $this->recipientName;
+    }
+
+    public function setRecipientName(string $recipientName): void
+    {
+        $this->recipientName = $recipientName;
+    }
+
+    public function getRecipientPhone(): string
+    {
+        return $this->recipientPhone;
+    }
+
+    public function setRecipientPhone(string $recipientPhone): void
+    {
+        $this->recipientPhone = $recipientPhone;
+    }
+
+    public function getSenderName(): string
+    {
+        return $this->senderName;
+    }
+
+    public function setSenderName(string $senderName): void
+    {
+        $this->senderName = $senderName;
+    }
+
+    public function getSenderPhone(): string
+    {
+        return $this->senderPhone;
+    }
+
+    public function setSenderPhone(string $senderPhone): void
+    {
+        $this->senderPhone = $senderPhone;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
+    }
 
     public function getId(): int
     {

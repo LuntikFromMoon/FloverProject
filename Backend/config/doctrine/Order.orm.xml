@@ -24,7 +24,13 @@
         </many-to-one>
 
         <field name="createdAt" column="created_at" type="datetime" nullable="false"/>
+        <field name="deliveryDate" column="delivery_date" type="datetime" nullable="false"/>
         <field name="address" column="address" type="string" length="255" nullable="false"/>
+        <field name="recipientName" column="recipient_name" type="string" length="255" nullable="false"/>
+        <field name="recipientPhone" column="recipient_phone" type="string" length="255" nullable="false"/>
+        <field name="senderName" column="sender_name" type="string" length="255" nullable="false"/>
+        <field name="senderPhone" column="sender_phone" type="string" length="255" nullable="false"/>
+        <field name="description" column="description" type="string" length="1000" nullable="false"/>
         <field name="totalPrice" column="total_price" type="float" nullable="false"/>
     </entity>
 </doctrine-mapping>
