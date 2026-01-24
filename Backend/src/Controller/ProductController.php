@@ -31,9 +31,9 @@ class ProductController extends AbstractController
         $order = $request->query->get('order', 'asc');
 
         $products = $this->productRepository->findWithFilters(
-            $category !== null ? (int) $category : null,
-            $minPrice !== null ? (float) $minPrice : null,
-            $maxPrice !== null ? (float) $maxPrice : null,
+            is_numeric($category) ? (int) $category : null,
+            is_numeric($minPrice) ? (float) $minPrice : null,
+            is_numeric($maxPrice) ? (float) $maxPrice : null,
             $search,
             $sort,
             $order
