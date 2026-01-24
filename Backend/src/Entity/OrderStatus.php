@@ -9,6 +9,19 @@ class OrderStatus
         private string $name
     ) {}
 
+    public static function getAvailableStatuses(string $currentStatus): array
+    {
+        $availableStatuses = [
+            'В ожидании подтверждения' => ['Принят в обработку', 'Отменён'],
+            'Принят в обработку' => ['В доставке', 'Отменён'],
+            'В доставке' => ['Доставлен', 'Отменён'],
+            'Доставлен' => [],
+            'Отменён' => []
+        ];
+
+        return $availableStatuses[$currentStatus] ?? [];
+    }
+
     public function getId(): int
     {
         return $this->id;

@@ -56,6 +56,9 @@ class OrderController extends AbstractController
         $orders = $this->orderService->getAllOrders();
 
         $ordersData = array_map(function ($order) {
+            $currentStatusName = $order->getStatus()->getName();
+            $nextStatusName = $this->orderService->getNextStatus($currentStatusName);
+
             return [
                 'id' => $order->getId(),
                 'shop' => [
@@ -68,6 +71,7 @@ class OrderController extends AbstractController
                 'createdAt' => $order->getCreatedAt()->format('Y-m-d H:i:s'),
                 'address' => $order->getAddress(),
                 'totalPrice' => $order->getTotalPrice(),
+                'availableStatus' => $nextStatusName,
             ];
         }, $orders);
 
@@ -81,6 +85,9 @@ class OrderController extends AbstractController
     public function getOrder(int $id): JsonResponse
     {
         $order = $this->orderService->getOrderById($id);
+
+        $currentStatusName = $order->getStatus()->getName();
+        $nextStatusName = $this->orderService->getNextStatus($currentStatusName);
 
         if (!$order) {
             return $this->json([
@@ -103,7 +110,28 @@ class OrderController extends AbstractController
                 'createdAt' => $order->getCreatedAt()->format('Y-m-d H:i:s'),
                 'address' => $order->getAddress(),
                 'totalPrice' => $order->getTotalPrice(),
+                'availableStatus' => $nextStatusName,
             ]
+        ]);
+    }
+
+    #[Route('/api/orders/change-status/{id}', name: 'api_change_order_status', methods: ['PUT'])]
+    public function changeStatus(int $id, Request $request): JsonResponse
+    {
+        $data = $request->toArray();
+        $statusName = $data['status'];
+
+        try {
+            $this->orderService->changeStatus($id, $statusName);
+        } catch (\Exception $e) {
+            return $this->json([
+                'status' => 'error',
+                'message' => $e->getMessage(),
+            ]);
+        }
+
+        return $this->json([
+            'status' => 'success',
         ]);
     }
 

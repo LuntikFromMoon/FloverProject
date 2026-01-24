@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Service;
 
 use App\Entity\Order;
+use App\Entity\OrderStatus;
 use App\Entity\ProductInOrder;
 use App\Repository\OrderRepository;
 use App\Repository\OrderStatusRepository;
@@ -121,5 +122,38 @@ class OrderService
     public function deleteOrderById(int $id): void
     {
         $this->orderRepository->deleteById($id);
+    }
+
+    public function changeStatus(int $id, string $statusName): void
+    {
+        $order = $this->orderRepository->findOrderById($id);
+        if (!$order) {
+            throw new \RuntimeException("Order with id {$id} not found");
+        }
+
+        $status = $this->orderStatusRepository->findByName($statusName);
+        if (!$status) {
+            throw new \RuntimeException("Status not found");
+        }
+
+        $currentStatus = $order->getStatus()->getName();
+        $availableStatuses = OrderStatus::getAvailableStatuses($currentStatus);
+
+        if (!in_array($statusName, $availableStatuses, true)) {
+            throw new \RuntimeException("Cannot change status from {$currentStatus} to {$statusName}. Available statuses: " . implode(', ', $availableStatuses));
+        }
+
+        $order->setStatus($status);
+
+        try {
+            $this->orderRepository->store($order);
+        } catch (\Exception $e) {
+            throw new \RuntimeException("Error updating order status");
+        }
+    }
+
+    public function getNextStatus($currentStatusName): array
+    {
+        return OrderStatus::getAvailableStatuses($currentStatusName);
     }
 }

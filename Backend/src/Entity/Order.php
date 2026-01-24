@@ -22,6 +22,11 @@ class Order
         private float $totalPrice,
     ) {}
 
+    public function setStatus(OrderStatus $status): void
+    {
+        $this->status = $status;
+    }
+
     public function getDeliveryDate(): \DateTime
     {
         return $this->deliveryDate;

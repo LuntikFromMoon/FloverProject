@@ -22,6 +22,11 @@ class OrderStatusRepository extends ServiceEntityRepository
         return $orderStatus->getId();
     }
 
+    public function findByName(string $name): ?OrderStatus
+    {
+        return $this->findOneBy(['name' => $name]);
+    }
+
     public function delete(OrderStatus $orderStatus): void
     {
         $this->getEntityManager()->remove($orderStatus);
