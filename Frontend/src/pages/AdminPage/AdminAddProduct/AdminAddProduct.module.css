@@ -1,0 +1,45 @@
+.adminEditProduct{
+    width: 80%;
+    margin: 30px auto 50px auto;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.adminEditProduct__title{
+    text-align: center;
+    width: 100%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+.formGroup label{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.formGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+    padding: 10px;
+    border: rgba(179, 116, 151, 0.4) solid 1px;
+}
+.imagePreviewWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.imagePreview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: rgba(179, 116, 151, 0.4) solid 1px;
+}
+.saveBtn { background: #b87596; color: white; padding: 12px 24px; border: none; cursor: pointer; border-radius: 4px; }
+.cancelBtn { background: #eee; margin-left: 10px; padding: 12px 24px; border: none; cursor: pointer; border-radius: 4px; }

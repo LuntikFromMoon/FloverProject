@@ -128,6 +128,10 @@
     font-size: 16px;
     color: #333333;
 }
+.header__basket{
+    margin-left: auto;
+    margin-right: 5px;
+}
 .header__deferredProd{
     margin-top: 12%;
     display: flex;

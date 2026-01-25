@@ -19,18 +19,59 @@
     display: flex;
     column-gap: 5%;
 }
-.catalogMain__categories{
+.catalogMain__settings{
     width: 15%;
     font-family: MuseoSansCyrl, sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #333333;
 }
+.catalogMain__priceSortTitle{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 6px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.catalogMain__priceSortWrapper{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.catalogMain__priceSortWrapper input{
+    height: 30px;
+    border: #956D84 solid 1px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.sortButtons{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sortButtons button{
+    background-color: white;
+    border-radius: 5px;
+    height: 20px;
+    border: #956D84 solid 1px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
 .catalogMain__categories p{
-    margin-top: 8px;
+    cursor: pointer;
+    margin-bottom: 4px;
 }
 .catalogMain__categories p:hover{
     color: #956D84;
+}
+.activeCategory {
+    color: #956D84 !important;
+    font-weight: bold;
+    text-decoration: underline;
 }
 .catalogMain__catalog{
     width: 80%;

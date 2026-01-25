@@ -1,0 +1,95 @@
+.basketPage{
+    margin-top: 30px;
+}
+.basketPage__text{
+    text-align: center;
+    width: 100%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #333333;
+}
+.basketPage__content{
+    display: flex;
+    width: 80%;
+    margin: 35px auto;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+}
+.basketPage__productList{
+    width: 70%;
+}
+.basketPage__cheque{
+    margin-top: 24px;
+    width: 25%;
+}
+.basketPage__description{
+    display: flex;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.5);
+}
+.basketPage__name{
+    margin-left: 140px;
+    flex: 0 0 22%;
+}
+.basketPage__coast{
+    margin-left: 10px;
+    flex: 0 0 12%;
+}
+.basketPage__count{
+    margin-left: 60px;
+}
+.basketPage__total{
+    margin-left: auto;
+    margin-right: 70px;
+}
+.basketPage__cheque{
+    padding: 30px 5%;
+    border: rgba(179, 116, 151, 0.4) solid 1px;
+}
+.basketPage__chequeTitle{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #956D84;
+}
+.basketPage__chequeRow{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.basketPage__chequeTotalTitle{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #333333;
+}
+.basketPage__chequeTotalCost{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #333333;
+}
+a{
+    text-decoration: none;
+}
+.basketPage__orderBut{
+    margin: 20px auto auto auto;
+    color: #fff;
+    background: linear-gradient(135deg, #b87596, #956D84);
+    text-align: center;
+    border-radius: 7px;
+    height: 50px;
+    width: 60%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+}
+.basketPage__orderBut:hover{
+    background: linear-gradient(135deg, #b68ca2, #b672a2);
+    box-shadow: 0 6px 16px rgba(184, 117, 150, 0.4);
+}

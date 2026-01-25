@@ -1,0 +1,42 @@
+.basketItem{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-top: 5px;
+    border: rgba(179, 116, 151, 0.4) solid 1px;
+    padding: 10px 20px;
+    gap: 20px;
+}
+.basketItem__img{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.basketItem__title{
+    flex: 0 0 22%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.basketItem__total{
+    margin-left: auto;
+    flex: 0 0 17%;
+    text-align: right;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+}
+.basketItem__price{
+    flex: 0 0 12%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333;
+}

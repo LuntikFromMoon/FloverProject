@@ -1,7 +1,7 @@
 .header__top {
     background-color: #333333;
     display: flex;
-    height: 50px;
+    height: 80px;
     justify-content: space-between;
     padding: 0 10%;
 }
@@ -9,6 +9,50 @@
     display: flex;
     align-items: center;
     gap: 40px;
+}
+.header__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__logoText{
+    display: flex;
+    flex-direction: column;
+}
+.logoTitle{
+    font-family: Attentica4F, "Segoe Print", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffeef5;
+}
+.logoSubtitle{
+    font-family: "Segoe UI Historic", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    color: #828282;
+}
+.header__logoCity{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header__logoNext{
+    margin: auto auto auto 20px;
+}
+.header__catalog{
+    margin-top: 10px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.89);
+    text-align: center;
+}
+.header__choice{
+    margin: auto;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #956D84;
 }
 .header__top a{
     text-decoration: none;
@@ -75,8 +119,8 @@
 .header__options{
     font-family: MuseoSansCyrl, sans-serif;
     font-weight: 300;
-    font-size: 16px;
-    color: white;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.46);
 }
 .header__choice{
     font-family: MuseoSansCyrl, sans-serif;
@@ -111,4 +155,18 @@
 .header__languageMenu{
 }
 .header__cityMenu{
+}
+.header__basket{
+    margin-left: auto;
+    margin-right: 5px;
+}
+.header__deferredProd{
+    margin-top: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ececec;
 }

@@ -7,61 +7,62 @@ import {UserIcon} from "../../../assets/icons/UserIcon";
 import {CategoryChoice} from "../CurrencyChoice/CurrencyChoice";
 import {LanguageChoice} from "../LanguageChoice/LanguageChoice";
 import {CityChoice} from "../CityChoice/CityChoice";
+import {FlowerIcon} from "../../../assets/icons/FlowerIcon";
+import {Link} from "react-router-dom";
+import {Basket} from "../../../assets/icons/Basket(29px)";
+import {useEffect, useState} from "react";
+import {getCart} from "../../../utils/cartService";
 
 const HeaderInfo = () => {
-    function OnClickLogin() {
-        fetch("http://localhost:8000/api/login", {
-            method: "POST",
-        })
-            .then(res => res.json())
-            .then(data => console.log(data))
-            .catch(err => console.log(err));
-    }
+    const [totalCost, setTotalCost] = useState(0);
+
+    const calculateTotal = () => {
+        const cartItems = getCart();
+        const cost = cartItems.reduce((sum, item) => sum + (item.price * item.count), 0);
+        setTotalCost(cost);
+    };
+
+    useEffect(() => {
+        calculateTotal();
+        const handleCartUpdate = () => {
+            calculateTotal();
+        };
+        window.addEventListener('cart-updated', handleCartUpdate);
+        window.addEventListener('storage', handleCartUpdate);
+        return () => {
+            window.removeEventListener('cart-updated', handleCartUpdate);
+            window.removeEventListener('storage', handleCartUpdate);
+        };
+    }, []);
 
     return <div className={styles.header__top}>
         <div className={styles.header__nav}>
             <div className={styles.header__item}>
-                <p className={styles.header__options}>Валюта</p>
-                <CategoryChoice />
-            </div>
-            <div className={styles.header__item}>
-                <p className={styles.header__options}>Язык</p>
-                <LanguageChoice />
-            </div>
-            <div className={styles.header__item}>
-                <p className={styles.header__options}>Город</p>
-                <CityChoice />
-            </div>
-            <a className={styles.header__item} href='#'>
-                <div className={styles.header__icon}>
-                    <HeartIcon/>
+                <Link to="/">
+                    <div className={styles.header__logo}>
+                        <FlowerIcon/>
+                        <div className={styles.header__logoText}>
+                            <p className={styles.logoTitle}>YoFlower</p>
+                            <p className={styles.logoSubtitle}>Доставка цветов и подарков</p>
+                        </div>
+                    </div>
+                </Link>
+                <div className={styles.header__logoNext}>
+                    <div className={styles.header__logoCity}>
+                        <p className={styles.header__options}>Город</p>
+                        <p className={styles.header__choice}>Йошкар-Ола</p>
+                    </div>
+                    <Link to="/catalog">
+                        <p className={styles.header__catalog}>Каталог товаров</p>
+                    </Link>
                 </div>
-                <a className={styles.header__options} href='#'>Закладки</a>
-            </a>
-            <a className={styles.header__item} href='#'>
-                <div className={styles.header__icon}>
-                    <CarIcon/>
-                </div>
-                <a className={styles.header__options} href='#'>Доставка и оплата</a>
-            </a>
-            <a className={styles.header__item} href='#'>
-                <div className={styles.header__icon}>
-                    <PhoneIcon/>
-                </div>
-                <a className={styles.header__options} href='#'>Контакты</a>
-            </a>
+            </div>
         </div>
         <div className={styles.header__authorization}>
-            <a className={styles.header__enter} href='#'>
-                <div className={styles.header__icon}>
-                    <UserIcon/>
-                </div>
-                {/*<a className={styles.header__entText} href='#'>Вход</a>*/}
-                <button className={styles.header__entText} type={"button"} onClick={OnClickLogin}>Вход</button>
-            </a>
-            <a href='#'>
-                <a className={styles.header__regist} href='#'>Регистрация</a>
-            </a>
+            <div className={styles.header__deferredProd}>
+                <p className={styles.header__deferredCost}>{totalCost.toFixed(0)} ₽</p>
+                <Link to='/basket' className={styles.header__basket}> <Basket/> </Link>
+            </div>
         </div>
     </div>
 

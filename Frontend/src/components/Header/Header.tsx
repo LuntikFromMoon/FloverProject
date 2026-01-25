@@ -5,6 +5,5 @@ import {Subheader} from "./Subheader/Subheader";
 export const Header = () => {
   return ( <div className={styles.header}>
     <HeaderInfo />
-    <Subheader/>
   </div>)
 };

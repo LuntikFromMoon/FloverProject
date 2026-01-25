@@ -1,4 +1,4 @@
-// src/components/CounterWithButton/CounterWithButton.tsx
+// src/components/Counter/Counter.tsx
 import { useState, useEffect, KeyboardEvent, ChangeEvent } from 'react';
 import styles from './CounterWithButton.module.css';
 

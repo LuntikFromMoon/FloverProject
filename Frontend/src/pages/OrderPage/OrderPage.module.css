@@ -1,0 +1,186 @@
+.orderPage{
+    margin-top: 30px;
+}
+.orderPage__title{
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #333333;
+}
+.orderPage__content{
+    display: flex;
+    width: 80%;
+    margin: 0 auto 40px auto;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+}
+.orderPage__fieldsWrapper{
+    width: 70%;
+}
+.orderPage__firstField{
+    margin-bottom: 10px;
+    padding: 30px 5%;
+    border: rgba(179, 116, 151, 0.4) solid 1px;
+}
+.orderPage__subtitle{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #333333;
+}
+.orderPage__firstFieldInputs{
+
+}
+.orderPage__firstFieldInputsRow{
+    display: flex;
+    gap: 30px;
+}
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.firstInputGroup {
+    width: 50%;
+}
+.inputGroup label {
+    font-family: MuseoSansCyrl, sans-serif;
+    font-size: 14px;
+    color: #BDBDBD;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+.inputGroup textarea,
+.inputGroup input {
+    padding: 12px;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    color: #333333;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+}
+.inputGroup textarea:focus,
+.inputGroup input:focus {
+    border-color: #b87596;
+}
+.disabledInput {
+    background-color: #f0f0f0;
+    color: #888;
+    cursor: not-allowed;
+}
+
+small {
+    color: #BDBDBD;
+    font-size: 12px;
+    margin-top: 4px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+}
+.orderPage__info{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.orderPage__secondField{
+    width: 50%;
+    padding: 30px 5%;
+    border: rgba(179, 116, 151, 0.4) solid 1px;
+}
+.orderPage__thirdField{
+    width: 50%;
+    padding: 30px 5%;
+    border: rgba(179, 116, 151, 0.4) solid 1px;
+}
+.orderPage__reference{
+    color: #BDBDBD;
+    margin-top: 10px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+.orderPage__cheque{
+    width: 25%;
+    padding: 30px 5%;
+    border: rgba(179, 116, 151, 0.4) solid 1px;
+}
+.orderPage__chequeTitle{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #956D84;
+    margin-bottom: 10px;
+}
+.orderPage__chequeRow{
+    margin-top: 10px;
+    display: flex;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #333333;
+    gap: 5px;
+}
+.orderPage__chequeRowTitle{
+    width: 60%;
+}
+.orderPage__chequeRowQuantity{
+    width: 10%;
+}
+.orderPage__chequeRowCost{
+    text-align: right;
+    width: 30%;
+}
+.orderPage__chequeRowTotal{
+    margin-top: 20px;
+    display: flex;
+}
+.orderPage__chequeTotalTitle{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #333333;
+}
+.orderPage__chequeTotalCost{
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #333333;
+    text-align: right;
+    margin-left: auto;
+}
+a{
+    text-decoration: none;
+}
+.orderPage__orderBut{
+    margin: 20px auto auto auto;
+    color: #fff;
+    background: linear-gradient(135deg, #b87596, #956D84);
+    text-align: center;
+    border-radius: 7px;
+    height: 50px;
+    width: 60%;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+}
+.orderPage__orderBut:hover{
+    cursor: pointer;
+    background: linear-gradient(135deg, #b68ca2, #b672a2);
+    box-shadow: 0 6px 16px rgba(184, 117, 150, 0.4);
+}
+.errorHint{
+    margin-top: 10px;
+    font-family: MuseoSansCyrl, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #d15a5a;
+}

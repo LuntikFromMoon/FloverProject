@@ -1,34 +1,80 @@
 import styles from "./ProductCard.module.css";
 import ProductGallery from './ProductGallery/ProductGallery';
 import CatItem from "../../components/Main/MainMiddlePart/CatalogItem/CatalogItem";
-import CounterWithButton from "../../components/Counter/CounterWithButton"
+import CounterWithButton from "./CounterWithButton/CounterWithButton"
 import catalog_photo from "../../assets/pictures/roses.jpg";
 import catalog_photo2 from "../../assets/pictures/image 26 (1).png";
 import catalog_photo3 from "../../assets/pictures/main_right_first.png";
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+import {useEffect, useState} from "react";
+import {addToCart} from "../../utils/cartService";
 
 export const ProductCard = () => {
+    const { id } = useParams(); // Достаем id из URL
+    const [product, setProduct] = useState<any>(null); // Тут будут данные товара
+    const [loading, setLoading] = useState(true);
+    const [relatedProducts, setRelatedProducts] = useState<any[]>([]);
+
+    useEffect(() => {
+        setLoading(true);
+        // Запрашиваем данные конкретного товара по ID
+        fetch(`http://localhost:8000/api/products/${id}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === "success") {
+                    setProduct(data.product);
+                }
+                setLoading(false);
+            })
+            .catch(err => {
+                console.error("Ошибка загрузки товара:", err);
+                setLoading(false);
+            });
+
+        //сопутствующие
+        fetch(`http://localhost:8000/api/products`)
+            .then(res => res.json())
+            .then(data => {
+                const allProducts = data.products || data;
+
+                const shuffled = [...allProducts]
+                    .filter(item => item.id !== Number(id))
+                    .sort(() => 0.5 - Math.random())
+                    .slice(0, 4);
+
+                setRelatedProducts(shuffled);
+            })
+            .catch(err => console.error("Ошибка загрузки сопутствующих товаров:", err));
+    }, [id]);
+
+    if (loading) return <p>Загрузка...</p>;
+    if (!product) return <p>Товар не найден</p>;
+
+    const productImages = product?.imagePath
+        ? [product.imagePath]
+        : [catalog_photo];
+
     // Функция для добавления в корзину
     const handleAddToCart = (quantity: number) => {
-        console.log(`Добавляем ${quantity} товара(ов) в корзину`);
-        // Здесь будет реальная логика добавления в корзину
+        const newItem = {
+            id: Number(id),
+            title: product.name,
+            price: product.price,
+            image: product.imagePath,
+            count: quantity
+        };
+        addToCart(newItem);
     };
-
-    const productImages = [
-        catalog_photo,
-        catalog_photo2,
-        catalog_photo3,
-    ];
 
     return (
         <div className={styles.productCard}>
             <div className={styles.productCard__review}>
                 <div className={styles.productCard__productGallery}>
-                    <ProductGallery images={productImages} alt="Букет алых роз"/>
+                    <ProductGallery images={productImages} alt={product.name}/>
                 </div>
                 <div className={styles.productCard__description}>
-                    <p className={styles.productCard__name}>Алые розы</p>
-                    <p className={styles.productCard__price}>4000 руб</p>
+                    <p className={styles.productCard__name}>{product.name}</p>
+                    <p className={styles.productCard__price}>{product.price} руб.</p>
                     <CounterWithButton
                         min={1}
                         max={50}
@@ -36,23 +82,22 @@ export const ProductCard = () => {
                         onAddToCart={handleAddToCart}
                     />
                     <p className={styles.productCard__descName}>Описание</p>
-                    <p className={styles.productCard__descText}>Ну типа розы появились давно ну знаете как это бывает ходишь ходишь по местному району в поисках хоть одного иссохшего бархатца который тебе надо было вырастить в домашних условиях ещё 5 месяцев назад в качестве домашнего задания по Окружающему миру, а на дороге прямо перед тобой валяется букетик Алых роз, ну да, не совсем то, что ты искал(а больше и нет ничего), но это ведь лучше, чем пустые руки? подари его географичке, пусть она разочаруется в тебе, но хотя бы с цветочком в руках. Стоит подчеркнуть, что он валялся на дороге, поэтому уже не первой свежести, но и что ты хотел от цветов, чтобы он тебе за 4 тыщи полы дома помыл? Много хочешь, кидай в корзину короче и разговор короткий...</p>
+                    <p className={styles.productCard__descText}>
+                        {product.description || "Описание отсутствует"}
+                    </p>
                 </div>
             </div>
             <p className={styles.productCard__hintText}>Сопутствующие товары</p>
             <div className={styles.productCard__hint}>
-                <Link to="/product">
-                    <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
-                </Link>
-                <Link to="/product">
-                    <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
-                </Link>
-                <Link to="/product">
-                    <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
-                </Link>
-                <Link to="/product">
-                    <CatItem image={catalog_photo} title={"Алые Розы"} price={4000}></CatItem>
-                </Link>
+                {relatedProducts.map((item) => (
+                    <Link to={`/product/${item.id}`} key={item.id}>
+                        <CatItem
+                            image={item.imagePath || catalog_photo}
+                            title={item.name}
+                            price={item.price}
+                        />
+                    </Link>
+                ))}
             </div>
         </div>
     )
