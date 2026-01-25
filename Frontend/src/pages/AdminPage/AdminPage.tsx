@@ -49,7 +49,6 @@ export const AdminPage = () => {
             });
 
             if (response.ok) {
-                // Обновляем локальный стейт, чтобы изменения сразу отобразились
                 setOrders(prevOrders =>
                     prevOrders.map(order =>
                         order.id === orderId
@@ -57,8 +56,6 @@ export const AdminPage = () => {
                             : order
                     )
                 );
-                // Либо просто переподтягиваем список заказов:
-                // fetchOrders();
             } else {
                 alert("Не удалось обновить статус");
             }

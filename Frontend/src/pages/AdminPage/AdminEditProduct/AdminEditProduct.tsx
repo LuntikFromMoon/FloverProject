@@ -3,7 +3,7 @@ import {useNavigate, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 
 export const AdminEditProduct = () => {
-    const { id } = useParams(); // Достаем ID из пути /admin/product/edit/26
+    const { id } = useParams();
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
@@ -21,7 +21,6 @@ export const AdminEditProduct = () => {
         fetch(`http://localhost:8000/api/products/${id}`)
             .then(res => res.json())
             .then(data => {
-                // Если бэк возвращает { product: {...} }, не забудь data.product
                 const p = data.product || data;
                 setFormData({
                     name: p.name,
@@ -43,7 +42,7 @@ export const AdminEditProduct = () => {
             const reader = new FileReader();
             reader.onloadend = () => {
                 const base64String = reader.result as string;
-                setPreview(base64String); // Новая картинка сразу появляется в превью
+                setPreview(base64String);
                 setFormData(prev => ({ ...prev, imagePath: base64String }));
             };
             reader.readAsDataURL(file);

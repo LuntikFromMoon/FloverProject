@@ -17,7 +17,6 @@ export const AdminAddProduct = () => {
     const [preview, setPreview] = useState<string | null>(null);
     const [isError, setIsError] = useState(false);
 
-    // Загружаем только категории
     useEffect(() => {
         fetch('http://localhost:8000/api/product-category')
             .then(res => res.json())
@@ -47,7 +46,6 @@ export const AdminAddProduct = () => {
             formData.category_id
         ];
 
-        // 2. Проверяем: каждое поле должно существовать, не быть пустым и не состоять из одних пробелов
         const allFilled = fieldsToValidate.every(value =>
             value && String(value).trim() !== ''
         );
@@ -57,7 +55,6 @@ export const AdminAddProduct = () => {
             return;
         }
 
-        // 3. Формируем данные для бэкенда
         const dataToSend = {
             name: formData.name,
             categoryId: Number(formData.category_id),

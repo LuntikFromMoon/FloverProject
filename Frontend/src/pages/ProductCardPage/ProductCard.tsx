@@ -10,14 +10,13 @@ import {useEffect, useState} from "react";
 import {addToCart} from "../../utils/cartService";
 
 export const ProductCard = () => {
-    const { id } = useParams(); // Достаем id из URL
-    const [product, setProduct] = useState<any>(null); // Тут будут данные товара
+    const { id } = useParams();
+    const [product, setProduct] = useState<any>(null);
     const [loading, setLoading] = useState(true);
     const [relatedProducts, setRelatedProducts] = useState<any[]>([]);
 
     useEffect(() => {
         setLoading(true);
-        // Запрашиваем данные конкретного товара по ID
         fetch(`http://localhost:8000/api/products/${id}`)
             .then(res => res.json())
             .then(data => {
@@ -54,7 +53,6 @@ export const ProductCard = () => {
         ? [product.imagePath]
         : [catalog_photo];
 
-    // Функция для добавления в корзину
     const handleAddToCart = (quantity: number) => {
         const newItem = {
             id: Number(id),

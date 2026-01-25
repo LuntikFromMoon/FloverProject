@@ -21,7 +21,6 @@ export const addToCart = (item: CartItem) => {
         cart.push(item);
     }
     localStorage.setItem('cart', JSON.stringify(cart));
-    // Вызываем событие, чтобы другие вкладки/компоненты узнали об обновлении
     window.dispatchEvent(new Event('cart-updated'));
 };
 

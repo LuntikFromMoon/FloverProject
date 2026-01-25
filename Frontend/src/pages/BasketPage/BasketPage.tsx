@@ -30,8 +30,8 @@ export const BasketPage = () => {
                         <BasketItem
                             key={item.id}
                             {...item}
-                            onUpdate={updateCartQuantity} // Передаем функцию обновления
-                            onRemove={removeFromCart}    // И удаления
+                            onUpdate={updateCartQuantity}
+                            onRemove={removeFromCart}
                         />
                     ))}
                 </div>

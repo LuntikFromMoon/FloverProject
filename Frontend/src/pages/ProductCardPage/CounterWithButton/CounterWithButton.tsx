@@ -19,7 +19,6 @@ const CounterWithButton = ({
     const [inputValue, setInputValue] = useState(initial.toString());
     const [isEditing, setIsEditing] = useState(false);
 
-    // Синхронизируем inputValue с count
     useEffect(() => {
         if (!isEditing) {
             setInputValue(count.toString());
@@ -42,12 +41,10 @@ const CounterWithButton = ({
         const value = e.target.value;
         setInputValue(value);
 
-        // Если пустое значение, оставляем как есть
         if (value === '') return;
 
         const numValue = parseInt(value, 10);
 
-        // Проверяем, что это число и оно в пределах min-max
         if (!isNaN(numValue)) {
             if (numValue >= min && numValue <= max) {
                 setCount(numValue);
@@ -58,7 +55,6 @@ const CounterWithButton = ({
     const handleInputBlur = () => {
         setIsEditing(false);
 
-        // Если input пустой, возвращаем предыдущее значение
         if (inputValue === '') {
             setInputValue(count.toString());
             return;
@@ -66,7 +62,6 @@ const CounterWithButton = ({
 
         const numValue = parseInt(inputValue, 10);
 
-        // Если не число или вне диапазона, сбрасываем
         if (isNaN(numValue) || numValue < min || numValue > max) {
             setInputValue(count.toString());
         } else {
@@ -79,12 +74,10 @@ const CounterWithButton = ({
     };
 
     const handleInputKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
-        // Разрешаем только цифры и управляющие клавиши
         if (!/[0-9]|Backspace|Delete|Tab|Enter/.test(e.key)) {
             e.preventDefault();
         }
 
-        // Enter подтверждает ввод
         if (e.key === 'Enter') {
             handleInputBlur();
             e.currentTarget.blur();
@@ -101,7 +94,6 @@ const CounterWithButton = ({
 
     return (
         <div className={styles.counterWrapper}>
-            {/* Счетчик с input */}
             <div className={styles.counter}>
                 <button
                     className={styles.counterButton}
@@ -139,7 +131,6 @@ const CounterWithButton = ({
                 </button>
             </div>
 
-            {/* Кнопка добавления в корзину */}
             <button
                 className={styles.addToCartButton}
                 onClick={handleAddToCart}

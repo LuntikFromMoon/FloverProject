@@ -22,10 +22,10 @@ export const OrderPage = () => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
-        setIsError(false); // Убираем ошибку, когда пользователь начал что-то исправлять
+        setIsError(false);
     };
 
-    const cartItems = getCart(); // Получаем массив товаров из localStorage
+    const cartItems = getCart();
     const totalCost = cartItems.reduce((sum, item) => sum + (item.price * item.count), 0);
 
     const handleOrderSubmit = async (e: React.MouseEvent) => {

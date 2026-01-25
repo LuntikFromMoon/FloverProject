@@ -19,7 +19,7 @@ interface IProduct {
 export const CatalogMain = () => {
     const [minPrice, setMinPrice] = useState<string>('');
     const [maxPrice, setMaxPrice] = useState<string>('');
-    const [sortType, setSortType] = useState<string>(''); // 'price' или 'name'
+    const [sortType, setSortType] = useState<string>('');
     const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
 
     const [products, setProducts] = useState<IProduct[]>([]);
@@ -28,7 +28,7 @@ export const CatalogMain = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/product-category') // Какой путь???
+        fetch('http://localhost:8000/api/product-category')
             .then(res => res.json())
             .then(data => setCategories(data.productCategories))
             .catch(err => console.error("Ошибка категорий:", err));
@@ -70,7 +70,6 @@ export const CatalogMain = () => {
         fetch(`http://localhost:8000/api/products?${params.toString()}`)
             .then(res => res.json())
             .then(data => {
-                // Если бэк возвращает { products: [...] }, используй data.products
                 setProducts(Array.isArray(data) ? data : data.products);
                 setLoading(false);
             })
