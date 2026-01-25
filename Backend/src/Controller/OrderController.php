@@ -29,13 +29,6 @@ class OrderController extends AbstractController
             'status' => 'success',
             'order' => [
                 'id' => $order->getId(),
-                'shop' => [
-                    'shopId' => $order->getShop()->getId(),
-                    'city' => $order->getShop()->getCity(),
-                    'street' => $order->getShop()->getStreet(),
-                    'build' => $order->getShop()->getBuild(),
-
-                ],
                 'status' => $order->getStatus()->getName(),
                 'createdAt' => $order->getCreatedAt()->format('Y-m-d H:i:s'),
                 'deliveryDate' => $order->getDeliveryDate()->format('Y-m-d H:i:s'),
@@ -61,12 +54,6 @@ class OrderController extends AbstractController
 
             return [
                 'id' => $order->getId(),
-                'shop' => [
-                    'shopId' => $order->getShop()->getId(),
-                    'city' => $order->getShop()->getCity(),
-                    'street' => $order->getShop()->getStreet(),
-                    'build' => $order->getShop()->getBuild(),
-                ],
                 'status' => $order->getStatus()->getName(),
                 'createdAt' => $order->getCreatedAt()->format('Y-m-d H:i:s'),
                 'deliveryDate' => $order->getDeliveryDate()->format('Y-m-d H:i:s'),
@@ -106,12 +93,6 @@ class OrderController extends AbstractController
             'status' => 'success',
             'order' => [
                 'id' => $order->getId(),
-                'shop' => [
-                    'shopId' => $order->getShop()->getId(),
-                    'city' => $order->getShop()->getCity(),
-                    'street' => $order->getShop()->getStreet(),
-                    'build' => $order->getShop()->getBuild(),
-                ],
                 'status' => $order->getStatus()->getName(),
                 'createdAt' => $order->getCreatedAt()->format('Y-m-d H:i:s'),
                 'deliveryDate' => $order->getDeliveryDate()->format('Y-m-d H:i:s'),

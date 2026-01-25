@@ -8,7 +8,6 @@ class Order
 {
     public function __construct(
         private ?int $id,
-        private Shop $shop,
         private OrderStatus $status,
         private User $user,
         private \DateTime $createdAt,
@@ -90,11 +89,6 @@ class Order
     public function getId(): int
     {
         return $this->id;
-    }
-
-    public function getShop(): Shop
-    {
-        return $this->shop;
     }
 
     public function getStatus(): OrderStatus

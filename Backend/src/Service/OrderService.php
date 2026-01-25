@@ -11,7 +11,6 @@ use App\Repository\OrderRepository;
 use App\Repository\OrderStatusRepository;
 use App\Repository\ProductInOrderRepository;
 use App\Repository\ProductRepository;
-use App\Repository\ShopRepository;
 use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
@@ -19,7 +18,6 @@ class OrderService
 {
     public function __construct(
         private OrderRepository $orderRepository,
-        private ShopRepository $shopRepository,
         private OrderStatusRepository $orderStatusRepository,
         private UserRepository $userRepository,
         private ProductRepository $productRepository,
@@ -33,10 +31,6 @@ class OrderService
     {
         if (!$user = $this->userRepository->find($userId)) {
             throw new \RuntimeException('User not found');
-        }
-
-        if (!$shop = $this->shopRepository->find($data['shopId'])) {
-             throw new \RuntimeException("Shop not found");
         }
 
         if (!$status = $this->orderStatusRepository->find(1)) {
@@ -64,7 +58,6 @@ class OrderService
 
             $order = new Order(
                 null,
-                $shop,
                 $status,
                 $user,
                 new \DateTime('now', new \DateTimeZone('Europe/Moscow')),
