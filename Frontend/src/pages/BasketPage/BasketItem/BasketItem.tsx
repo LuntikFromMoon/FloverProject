@@ -1,5 +1,4 @@
 import styles from './BasketItem.module.css'
-import {useState} from "react";
 import Counter from "../../../components/Counter/Counter";
 import TrashBin from "../../../assets/icons/TrashBin";
 

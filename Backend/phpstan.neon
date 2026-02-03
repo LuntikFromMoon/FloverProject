@@ -1,0 +1,8 @@
+parameters:
+    level: 8
+    paths:
+        - src
+    tmpDir: var/phpstan
+    treatPhpDocTypesAsCertain: false
+    ignoreErrors:
+        - '#no value type specified in iterable type#'

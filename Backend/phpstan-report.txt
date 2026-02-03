@@ -1,0 +1,278 @@
+Cannot load Xdebug - it was already loaded
+Note: Using configuration file C:\Programming\FloverProject\Backend\phpstan.neon.
+  0/22 [>---------------------------]   0%[1G[2K 20/22 [=========================>--]  90%[1G[2K 22/22 [============================] 100%
+
+ ------ ---------------------------------------------------------- 
+  [32mLine[39m   [32mController\OrderController.php[39m                            
+ ------ ---------------------------------------------------------- 
+  82     Cannot call method getStatus() on App\Entity\Order|null.  
+         🪪  method.nonObject                                      
+         at src/Controller/OrderController.php:82                  
+ ------ ---------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mController\ProductController.php[39m                                                                         
+ ------ --------------------------------------------------------------------------------------------------------- 
+  37     Parameter #4 $search of method App\Repository\ProductRepository::findWithFilters() expects string|null,  
+         bool|float|int|string|null given.                                                                        
+         🪪  argument.type                                                                                        
+         at src/Controller/ProductController.php:37                                                               
+  38     Parameter #5 $sort of method App\Repository\ProductRepository::findWithFilters() expects string|null,    
+         bool|float|int|string|null given.                                                                        
+         🪪  argument.type                                                                                        
+         at src/Controller/ProductController.php:38                                                               
+  39     Parameter #6 $order of method App\Repository\ProductRepository::findWithFilters() expects string,        
+         bool|float|int|string|null given.                                                                        
+         🪪  argument.type                                                                                        
+         at src/Controller/ProductController.php:39                                                               
+  83     Call to an undefined method object::getId().                                                             
+         🪪  method.notFound                                                                                      
+         at src/Controller/ProductController.php:83                                                               
+  84     Call to an undefined method object::getName().                                                           
+         🪪  method.notFound                                                                                      
+         at src/Controller/ProductController.php:84                                                               
+  85     Call to an undefined method object::getDescription().                                                    
+         🪪  method.notFound                                                                                      
+         at src/Controller/ProductController.php:85                                                               
+  86     Call to an undefined method object::getPrice().                                                          
+         🪪  method.notFound                                                                                      
+         at src/Controller/ProductController.php:86                                                               
+  87     Call to an undefined method object::getImagePath().                                                      
+         🪪  method.notFound                                                                                      
+         at src/Controller/ProductController.php:87                                                               
+  89     Call to an undefined method object::getProductCategory().                                                
+         🪪  method.notFound                                                                                      
+         at src/Controller/ProductController.php:89                                                               
+  90     Call to an undefined method object::getProductCategory().                                                
+         🪪  method.notFound                                                                                      
+         at src/Controller/ProductController.php:90                                                               
+ ------ --------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------- 
+  [32mLine[39m   [32mEntity\Order.php[39m                                                          
+ ------ -------------------------------------------------------------------------- 
+  91     Method App\Entity\Order::getId() should return int but returns int|null.  
+         🪪  return.type                                                           
+         at src/Entity/Order.php:91                                                
+ ------ -------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mEntity\OrderStatus.php[39m                                                                                     
+ ------ ----------------------------------------------------------------------------------------------------------- 
+  12     Method App\Entity\OrderStatus::getAvailableStatuses() return type has no value type specified in iterable  
+         type array.                                                                                                
+         🪪  missingType.iterableValue                                                                              
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                 
+         at src/Entity/OrderStatus.php:12                                                                           
+ ------ ----------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mEntity\Product.php[39m                                                                       
+ ------ ----------------------------------------------------------------------------------------- 
+  18     Method App\Entity\Product::getId() should return int but returns int|null.               
+         🪪  return.type                                                                          
+         at src/Entity/Product.php:18                                                             
+  43     Method App\Entity\Product::getImagePath() should return string but returns string|null.  
+         🪪  return.type                                                                          
+         at src/Entity/Product.php:43                                                             
+ ------ ----------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mEntity\ProductCategory.php[39m                                                                  
+ ------ -------------------------------------------------------------------------------------------- 
+  29     Method App\Entity\ProductCategory::getName() should return string but returns string|null.  
+         🪪  return.type                                                                             
+         at src/Entity/ProductCategory.php:29                                                        
+ ------ -------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mEntity\ProductInOrder.php[39m                                                          
+ ------ ----------------------------------------------------------------------------------- 
+  18     Method App\Entity\ProductInOrder::getId() should return int but returns int|null.  
+         🪪  return.type                                                                    
+         at src/Entity/ProductInOrder.php:18                                                
+ ------ ----------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------------ 
+  [32mLine[39m   [32mRepository\OrderRepository.php[39m                                                                              
+ ------ ------------------------------------------------------------------------------------------------------------ 
+  11     Class App\Repository\OrderRepository extends generic class                                                  
+         Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository but does not specify its types: T         
+         🪪  missingType.generics                                                                                    
+         at src/Repository/OrderRepository.php:11                                                                    
+  42     Method App\Repository\OrderRepository::findAllOrders() return type has no value type specified in iterable  
+         type array.                                                                                                 
+         🪪  missingType.iterableValue                                                                               
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                  
+         at src/Repository/OrderRepository.php:42                                                                    
+  49     Method App\Repository\OrderRepository::findOrderById() should return App\Entity\Order|null but returns      
+         object|null.                                                                                                
+         🪪  return.type                                                                                             
+         at src/Repository/OrderRepository.php:49                                                                    
+ ------ ------------------------------------------------------------------------------------------------------------ 
+
+ ------ --------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mRepository\OrderStatusRepository.php[39m                                                                     
+ ------ --------------------------------------------------------------------------------------------------------- 
+  11     Class App\Repository\OrderStatusRepository extends generic class                                         
+         Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository but does not specify its types: T      
+         🪪  missingType.generics                                                                                 
+         at src/Repository/OrderStatusRepository.php:11                                                           
+  27     Method App\Repository\OrderStatusRepository::findByName() should return App\Entity\OrderStatus|null but  
+         returns object|null.                                                                                     
+         🪪  return.type                                                                                          
+         at src/Repository/OrderStatusRepository.php:27                                                           
+ ------ --------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mRepository\ProductCategoryRepository.php[39m                                                             
+ ------ ----------------------------------------------------------------------------------------------------- 
+  11     Class App\Repository\ProductCategoryRepository extends generic class                                 
+         Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository but does not specify its types: T  
+         🪪  missingType.generics                                                                             
+         at src/Repository/ProductCategoryRepository.php:11                                                   
+  27     Method App\Repository\ProductCategoryRepository::getCategoryById() should return                     
+         App\Entity\ProductCategory|null but returns object|null.                                             
+         🪪  return.type                                                                                      
+         at src/Repository/ProductCategoryRepository.php:27                                                   
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mRepository\ProductInOrderRepository.php[39m                                                              
+ ------ ----------------------------------------------------------------------------------------------------- 
+  11     Class App\Repository\ProductInOrderRepository extends generic class                                  
+         Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository but does not specify its types: T  
+         🪪  missingType.generics                                                                             
+         at src/Repository/ProductInOrderRepository.php:11                                                    
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mRepository\ProductRepository.php[39m                                                                       
+ ------ ------------------------------------------------------------------------------------------------------- 
+  9      Class App\Repository\ProductRepository extends generic class                                           
+         Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository but does not specify its types: T    
+         🪪  missingType.generics                                                                               
+         at src/Repository/ProductRepository.php:9                                                              
+  40     Method App\Repository\ProductRepository::findWithFilters() return type has no value type specified in  
+         iterable type array.                                                                                   
+         🪪  missingType.iterableValue                                                                          
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type             
+         at src/Repository/ProductRepository.php:40                                                             
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mRepository\UserRepository.php[39m                                                                        
+ ------ ----------------------------------------------------------------------------------------------------- 
+  9      Class App\Repository\UserRepository extends generic class                                            
+         Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository but does not specify its types: T  
+         🪪  missingType.generics                                                                             
+         at src/Repository/UserRepository.php:9                                                               
+  20     Method App\Repository\UserRepository::store() should return int but returns int|null.                
+         🪪  return.type                                                                                      
+         at src/Repository/UserRepository.php:20                                                              
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mService\OrderService.php[39m                                                                                     
+ ------ ------------------------------------------------------------------------------------------------------------- 
+  30     Method App\Service\OrderService::createOrder() has parameter $data with no value type specified in iterable  
+         type array.                                                                                                  
+         🪪  missingType.iterableValue                                                                                
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                   
+         at src/Service/OrderService.php:30                                                                           
+  61     Parameter #2 $status of class App\Entity\Order constructor expects App\Entity\OrderStatus, object given.     
+         🪪  argument.type                                                                                            
+         at src/Service/OrderService.php:61                                                                           
+  62     Parameter #3 $user of class App\Entity\Order constructor expects App\Entity\User, object given.              
+         🪪  argument.type                                                                                            
+         at src/Service/OrderService.php:62                                                                           
+  88     Parameter #2 $product of class App\Entity\ProductInOrder constructor expects App\Entity\Product, object      
+         given.                                                                                                       
+         🪪  argument.type                                                                                            
+         at src/Service/OrderService.php:88                                                                           
+  105    Method App\Service\OrderService::getAllOrders() return type has no value type specified in iterable type     
+         array.                                                                                                       
+         🪪  missingType.iterableValue                                                                                
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                   
+         at src/Service/OrderService.php:105                                                                          
+  148    Method App\Service\OrderService::getNextStatus() has parameter $currentStatusName with no type specified.    
+         🪪  missingType.parameter                                                                                    
+         at src/Service/OrderService.php:148                                                                          
+  148    Method App\Service\OrderService::getNextStatus() return type has no value type specified in iterable type    
+         array.                                                                                                       
+         🪪  missingType.iterableValue                                                                                
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                   
+         at src/Service/OrderService.php:148                                                                          
+  153    Method App\Service\OrderService::getSalesByCategory() return type has no value type specified in iterable    
+         type array.                                                                                                  
+         🪪  missingType.iterableValue                                                                                
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                   
+         at src/Service/OrderService.php:153                                                                          
+ ------ ------------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mService\ProductCategoryService.php[39m                                                                            
+ ------ -------------------------------------------------------------------------------------------------------------- 
+  18     Method App\Service\ProductCategoryService::getAllProductCategories() return type has no value type specified  
+         in iterable type array.                                                                                       
+         🪪  missingType.iterableValue                                                                                 
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                    
+         at src/Service/ProductCategoryService.php:18                                                                  
+ ------ -------------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mService\ProductService.php[39m                                                                                     
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  21     Method App\Service\ProductService::createProduct() has parameter $data with no value type specified in         
+         iterable type array.                                                                                           
+         🪪  missingType.iterableValue                                                                                  
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                     
+         at src/Service/ProductService.php:21                                                                           
+  49     Method App\Service\ProductService::updateProduct() has parameter $data with no value type specified in         
+         iterable type array.                                                                                           
+         🪪  missingType.iterableValue                                                                                  
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                     
+         at src/Service/ProductService.php:49                                                                           
+  55     Call to an undefined method object::setName().                                                                 
+         🪪  method.notFound                                                                                            
+         at src/Service/ProductService.php:55                                                                           
+  56     Call to an undefined method object::setDescription().                                                          
+         🪪  method.notFound                                                                                            
+         at src/Service/ProductService.php:56                                                                           
+  57     Call to an undefined method object::setPrice().                                                                
+         🪪  method.notFound                                                                                            
+         at src/Service/ProductService.php:57                                                                           
+  64     Call to an undefined method object::setProductCategory().                                                      
+         🪪  method.notFound                                                                                            
+         at src/Service/ProductService.php:64                                                                           
+  67     Parameter #1 $product of method App\Repository\ProductRepository::store() expects App\Entity\Product, object   
+         given.                                                                                                         
+         🪪  argument.type                                                                                              
+         at src/Service/ProductService.php:67                                                                           
+  74     Parameter #1 $product of method App\Repository\ProductRepository::store() expects App\Entity\Product, object   
+         given.                                                                                                         
+         🪪  argument.type                                                                                              
+         at src/Service/ProductService.php:74                                                                           
+  80     Call to an undefined method object::setImagePath().                                                            
+         🪪  method.notFound                                                                                            
+         at src/Service/ProductService.php:80                                                                           
+  81     Parameter #1 $product of method App\Repository\ProductRepository::store() expects App\Entity\Product, object   
+         given.                                                                                                         
+         🪪  argument.type                                                                                              
+         at src/Service/ProductService.php:81                                                                           
+  84     Method App\Service\ProductService::updateProduct() should return App\Entity\Product but returns object.        
+         🪪  return.type                                                                                                
+         at src/Service/ProductService.php:84                                                                           
+  94     Call to an undefined method object::getImagePath().                                                            
+         🪪  method.notFound                                                                                            
+         at src/Service/ProductService.php:94                                                                           
+  100    Parameter #1 $product of method App\Repository\ProductRepository::delete() expects App\Entity\Product, object  
+         given.                                                                                                         
+         🪪  argument.type                                                                                              
+         at src/Service/ProductService.php:100                                                                          
+ ------ --------------------------------------------------------------------------------------------------------------- 
+
+[37;41m                                                                                                                       [39;49m
+[37;41m [ERROR] Found 51 errors                                                                                               [39;49m
+[37;41m                                                                                                                       [39;49m
+

@@ -8,6 +8,9 @@ use App\Entity\Order;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
+/**
+ * @extends ServiceEntityRepository<Order>
+ */
 class OrderRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
@@ -19,7 +22,11 @@ class OrderRepository extends ServiceEntityRepository
     {
         $this->getEntityManager()->persist($order);
         $this->getEntityManager()->flush();
-        return $order->getId();
+        $id = $order->getId();
+        if ($id === null) {
+            throw new \RuntimeException('Failed to generate order ID');
+        }
+        return $id;
     }
 
     public function delete(Order $order): void
@@ -39,6 +46,9 @@ class OrderRepository extends ServiceEntityRepository
         $this->getEntityManager()->flush();
     }
 
+    /**
+     * @return array<Order>
+     */
     public function findAllOrders(): array
     {
         return $this->findAll();

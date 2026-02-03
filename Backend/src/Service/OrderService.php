@@ -6,7 +6,9 @@ namespace App\Service;
 
 use App\Entity\Order;
 use App\Entity\OrderStatus;
+use App\Entity\Product;
 use App\Entity\ProductInOrder;
+use App\Entity\User;
 use App\Repository\OrderRepository;
 use App\Repository\OrderStatusRepository;
 use App\Repository\ProductInOrderRepository;
@@ -27,13 +29,31 @@ class OrderService
     {
     }
 
+    /**
+     * @param array{
+     *     products: array,
+     *     deliveryDate: string,
+     *      deliveryTime: string,
+     *      address: string,
+     *      recipientName: string,
+     *      recipientPhone: string,
+     *      senderName: string,
+     *      senderPhone: string,
+     *      description: string,
+     *      totalPrice: float
+     * } $data
+     */
     public function createOrder(array $data, int $userId): Order
     {
-        if (!$user = $this->userRepository->find($userId)) {
+        /** @var User|null $user */
+        $user = $this->userRepository->find($userId);
+        if (!$user) {
             throw new \RuntimeException('User not found');
         }
 
-        if (!$status = $this->orderStatusRepository->find(1)) {
+        /** @var OrderStatus|null $status */
+        $status = $this->orderStatusRepository->find(1);
+        if (!$status) {
             throw new \RuntimeException("Status not found");
         }
 
@@ -78,6 +98,7 @@ class OrderService
                     throw new \RuntimeException("Each product must have productId and quantity");
                 }
 
+                /** @var Product|null $product */
                 $product = $this->productRepository->find($productData['productId']);
                 if (!$product) {
                     throw new \RuntimeException("Product with id {$productData['productId']} not found");
@@ -102,6 +123,9 @@ class OrderService
         return $order;
     }
 
+    /**
+     * @return array<Order>
+     */
     public function getAllOrders(): array
     {
         return $this->orderRepository->findAllOrders();
@@ -145,11 +169,17 @@ class OrderService
         }
     }
 
-    public function getNextStatus($currentStatusName): array
+    /**
+     * @return array<string>
+     */
+    public function getNextStatus(string $currentStatusName): array
     {
         return OrderStatus::getAvailableStatuses($currentStatusName);
     }
 
+    /**
+     * @return array<array{categoryId: int, categoryName: string, totalSold: int}>
+     */
     public function getSalesByCategory(): array
     {
         return $this->productInOrderRepository->getSalesByCategory();

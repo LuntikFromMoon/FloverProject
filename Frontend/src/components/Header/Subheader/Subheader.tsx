@@ -2,7 +2,6 @@ import styles from "./Subheader.module.css";
 import {FlowerIcon} from "../../../assets/icons/FlowerIcon";
 import {CategoryChoice} from "../CategoryChoice/CategoryChoice";
 import {LoupeIcon} from "../../../assets/icons/LoupeIcon";
-import {HeartIconBig} from "../../../assets/icons/HeartIcon(29px)";
 import {Basket} from "../../../assets/icons/Basket(29px)";
 import {CatalogMenu} from "../CatalogMenu/CatalogMenu";
 import {Link} from "react-router-dom";

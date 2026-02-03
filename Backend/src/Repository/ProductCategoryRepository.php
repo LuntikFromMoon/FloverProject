@@ -8,6 +8,9 @@ use App\Entity\ProductCategory;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
+/**
+ * @extends ServiceEntityRepository<ProductCategory>
+ */
 class ProductCategoryRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
@@ -24,6 +27,7 @@ class ProductCategoryRepository extends ServiceEntityRepository
 
     public function getCategoryById(int $id): ?ProductCategory
     {
+        /** @var ProductCategory|null */
         return $this->find($id);
     }
 

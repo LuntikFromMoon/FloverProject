@@ -1,12 +1,4 @@
 import styles from './HeaderInfo.module.css';
-import {HeartIcon} from "../../../assets/icons/HeartIcon";
-import {CarIcon} from "../../../assets/icons/CarIcon";
-import {PhoneIcon} from "../../../assets/icons/PhoneIcon";
-import {UserIcon} from "../../../assets/icons/UserIcon";
-// import OptionList from "./Option/Option.tsx";
-import {CategoryChoice} from "../CurrencyChoice/CurrencyChoice";
-import {LanguageChoice} from "../LanguageChoice/LanguageChoice";
-import {CityChoice} from "../CityChoice/CityChoice";
 import {FlowerIcon} from "../../../assets/icons/FlowerIcon";
 import {Link} from "react-router-dom";
 import {Basket} from "../../../assets/icons/Basket(29px)";

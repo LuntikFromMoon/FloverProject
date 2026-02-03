@@ -6,6 +6,9 @@ use App\Entity\Product;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
+/**
+ * @extends ServiceEntityRepository<Product>
+ */
 class ProductRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
@@ -17,7 +20,11 @@ class ProductRepository extends ServiceEntityRepository
     {
         $this->getEntityManager()->persist($product);
         $this->getEntityManager()->flush();
-        return $product->getId();
+        $id = $product->getId();
+        if ($id === null) {
+            throw new \RuntimeException('Failed to generate product ID');
+        }
+        return $id;
     }
 
     public function delete(Product $product): void
@@ -37,6 +44,9 @@ class ProductRepository extends ServiceEntityRepository
         $this->getEntityManager()->flush();
     }
 
+    /**
+     * @return array<Product>
+     */
     public function findWithFilters(
         ?int $category = null,
         ?float $minPrice = null,

@@ -1,7 +1,7 @@
 import styles from './OrderPage.module.css'
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import { getCart } from '../../utils/cartService';
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 export const OrderPage = () => {
     const navigate = useNavigate();
@@ -31,7 +31,7 @@ export const OrderPage = () => {
     const handleOrderSubmit = async (e: React.MouseEvent) => {
         e.preventDefault();
 
-        const { comment, ...requiredFields } = formData;
+        const { ...requiredFields } = formData;
         const allFilled = (Object.keys(requiredFields) as Array<keyof typeof requiredFields>).every(key => {
             const value = requiredFields[key];
             return String(value).trim() !== '';

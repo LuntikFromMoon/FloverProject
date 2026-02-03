@@ -18,6 +18,9 @@ class ProductService
     )
     {}
 
+    /**
+     * @param array{name: string, description: string, price: float, categoryId: int, imageBase64: string} $data
+     */
     public function createProduct(array $data): Product
     {
         $category = $this->productCategoryRepository->getCategoryById($data['categoryId']);
@@ -46,15 +49,32 @@ class ProductService
         return $product;
     }
 
+    /**
+     * @param array{name?: string, description?: string, price?: float, categoryId?: int, imageBase64?: string} $data
+     */
     public function updateProduct(int $id, array $data): Product
     {
-        if (!$product = $this->productRepository->find($id)) {
+        if (!isset($data['name'], $data['description'], $data['price'], $data['categoryId'])) {
+            throw new \RuntimeException("Missing required fields");
+        }
+
+        /** @var Product|null $product */
+        $product = $this->productRepository->find($id);
+        if (!$product) {
             throw new \RuntimeException("Product not found");
         }
 
-        $product->setName($data['name']);
-        $product->setDescription($data['description']);
-        $product->setPrice($data['price']);
+        /** @var string $name */
+        $name = $data['name'];
+        $product->setName($name);
+
+        /** @var string $description */
+        $description = $data['description'];
+        $product->setDescription($description);
+
+        /** @var float $price */
+        $price = $data['price'];
+        $product->setPrice($price);
 
         $category = $this->productCategoryRepository->getCategoryById($data['categoryId']);
         if (!$category) {
@@ -86,6 +106,7 @@ class ProductService
 
     public function deleteProduct(int $id): void
     {
+        /** @var Product|null $product */
         $product = $this->productRepository->find($id);
         if (!$product) {
             throw new \RuntimeException("Product not found");

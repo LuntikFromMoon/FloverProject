@@ -86,18 +86,20 @@ class Order
         $this->description = $description;
     }
 
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
 
     public function getStatus(): OrderStatus
     {
+        /** @var OrderStatus */
         return $this->status;
     }
 
     public function getUser(): User
     {
+        /** @var User */
         return $this->user;
     }
 

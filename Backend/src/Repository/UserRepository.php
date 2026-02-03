@@ -6,6 +6,9 @@ use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
+/**
+ * @extends ServiceEntityRepository<User>
+ */
 class UserRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
@@ -17,7 +20,11 @@ class UserRepository extends ServiceEntityRepository
     {
         $this->getEntityManager()->persist($user);
         $this->getEntityManager()->flush();
-        return $user->getId();
+        $id = $user->getId();
+        if ($id === null) {
+            throw new \RuntimeException('Failed to generate user ID');
+        }
+        return $id;
     }
 
     public function delete(User $user): void

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from "../AdminEditProduct/AdminEditProduct.module.css"; // Используем те же стили
+import { ProductCategory } from '../../../types';
 
 export const AdminAddProduct = () => {
     const navigate = useNavigate();
@@ -13,7 +14,7 @@ export const AdminAddProduct = () => {
         category_id: ''
     });
 
-    const [categories, setCategories] = useState<any[]>([]);
+    const [categories, setCategories] = useState<ProductCategory[]>([]);
     const [preview, setPreview] = useState<string | null>(null);
     const [isError, setIsError] = useState(false);
 

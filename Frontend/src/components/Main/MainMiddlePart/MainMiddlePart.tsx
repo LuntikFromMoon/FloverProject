@@ -14,21 +14,6 @@ interface IProduct {
 const MainMiddlePart = () => {
     const [products, setProducts] = useState<IProduct[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
-    const [columns, setColumns] = useState<number>(4);
-
-    useEffect(() => {
-        const updateColumns = () => {
-            const width = window.innerWidth;
-            if (width >= 1174) setColumns(4);      // 1200
-            else if (width >= 874) setColumns(3);  // 992
-            else if (width >= 600) setColumns(2);  // 600
-            else setColumns(1);                    // Мобилки
-        };
-
-        window.addEventListener('resize', updateColumns);
-        updateColumns();
-        return () => window.removeEventListener('resize', updateColumns);
-    }, []);
 
     useEffect(() => {
         fetch('http://localhost:8000/api/products')
@@ -42,9 +27,7 @@ const MainMiddlePart = () => {
                 setLoading(false);
             });
     }, []);
-
-    const limit = columns * 3;
-    const displayedProducts = products.slice(0, limit);
+    const displayedProducts = products.slice(0, 10);
 
     return <div className={styles.main__middle}>
         <div className={styles.main__title}>

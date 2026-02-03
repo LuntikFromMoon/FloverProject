@@ -9,6 +9,9 @@ class OrderStatus
         private string $name
     ) {}
 
+    /**
+     * @return array<string>
+     */
     public static function getAvailableStatuses(string $currentStatus): array
     {
         $availableStatuses = [

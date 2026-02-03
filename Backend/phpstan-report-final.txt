@@ -1,0 +1,9 @@
+Cannot load Xdebug - it was already loaded
+Note: Using configuration file C:\Programming\FloverProject\Backend\phpstan.neon.
+  0/22 [>---------------------------]   0%[1G[2K 22/22 [============================] 100%
+
+
+[30;42m                                                                                                                       [39;49m
+[30;42m [OK] No errors                                                                                                        [39;49m
+[30;42m                                                                                                                       [39;49m
+

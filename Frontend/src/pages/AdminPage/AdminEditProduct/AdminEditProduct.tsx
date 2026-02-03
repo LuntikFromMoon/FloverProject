@@ -1,6 +1,7 @@
 import  styles from "./AdminEditProduct.module.css"
 import {useNavigate, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
+import { ProductCategory } from '../../../types';
 
 export const AdminEditProduct = () => {
     const { id } = useParams();
@@ -14,7 +15,7 @@ export const AdminEditProduct = () => {
         category_id: ''
     });
 
-    const [categories, setCategories] = useState<any[]>([]);
+    const [categories, setCategories] = useState<ProductCategory[]>([]);
     const [preview, setPreview] = useState<string | null>(null);
 
     useEffect(() => {

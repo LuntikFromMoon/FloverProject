@@ -1,0 +1,126 @@
+Cannot load Xdebug - it was already loaded
+Note: Using configuration file C:\Programming\FloverProject\Backend\phpstan.neon.
+  0/22 [>---------------------------]   0%[1G[2K 22/22 [============================] 100%
+
+ ------ ------------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mController\OrderController.php[39m                                                                               
+ ------ ------------------------------------------------------------------------------------------------------------- 
+  27     Parameter #1 $data of method App\Service\OrderService::createOrder() expects array{products: array,          
+         deliveryDate: string, deliveryTime: string, address: string, recipientName: string, recipientPhone: string,  
+         senderName: string, senderPhone: string, ...}, array given.                                                  
+         🪪  argument.type                                                                                            
+         at src/Controller/OrderController.php:27                                                                     
+ ------ ------------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------- 
+  [32mLine[39m   [32mController\ProductCategoryController.php[39m                                   
+ ------ --------------------------------------------------------------------------- 
+  31     Call to method getId() on an unknown class App\Service\ProductCategory.    
+         🪪  class.notFound                                                         
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols       
+         at src/Controller/ProductCategoryController.php:31                         
+  32     Call to method getName() on an unknown class App\Service\ProductCategory.  
+         🪪  class.notFound                                                         
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols       
+         at src/Controller/ProductCategoryController.php:32                         
+ ------ --------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mController\ProductController.php[39m                                                                               
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  38     Parameter #4 $search of method App\Repository\ProductRepository::findWithFilters() expects string|null,        
+         float|int<min, -1>|int<1, max>|string|true|null given.                                                         
+         🪪  argument.type                                                                                              
+         at src/Controller/ProductController.php:38                                                                     
+  39     Parameter #5 $sort of method App\Repository\ProductRepository::findWithFilters() expects string|null,          
+         float|int<min, -1>|int<1, max>|string|true|null given.                                                         
+         🪪  argument.type                                                                                              
+         at src/Controller/ProductController.php:39                                                                     
+  40     Parameter #6 $order of method App\Repository\ProductRepository::findWithFilters() expects string, float|int<m  
+         in, -1>|int<1, max>|string|true given.                                                                         
+         🪪  argument.type                                                                                              
+         at src/Controller/ProductController.php:40                                                                     
+  65     Parameter #1 $data of method App\Service\ProductService::createProduct() expects array{name: string,           
+         description: string, price: float, categoryId: int, imageBase64: string}, array given.                         
+         🪪  argument.type                                                                                              
+         at src/Controller/ProductController.php:65                                                                     
+ ------ --------------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mService\OrderService.php[39m                                                                                       
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  33     Method App\Service\OrderService::createOrder() has parameter $data with no value type specified in iterable    
+         type array.                                                                                                    
+         🪪  missingType.iterableValue                                                                                  
+         💡  See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type                     
+         at src/Service/OrderService.php:33                                                                             
+  36     PHPDoc tag @var for variable $user contains unknown class App\Service\User.                                    
+         🪪  class.notFound                                                                                             
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                                           
+         at src/Service/OrderService.php:36                                                                             
+  47     Negated boolean expression is always false.                                                                    
+         🪪  booleanNot.alwaysFalse                                                                                     
+         💡  Because the type is coming from a PHPDoc, you can turn off this check by setting [36mtreatPhpDocTypesAsCertain[39m  
+         [36m: false[39m in your [36mphpstan.neon[39m.                                                                                  
+         at src/Service/OrderService.php:47                                                                             
+  47     Offset 'products' on array{products: array, deliveryDate: string, deliveryTime: string, address: string,       
+         recipientName: string, recipientPhone: string, senderName: string, senderPhone: string, ...} in isset()        
+         always exists and is not nullable.                                                                             
+         🪪  isset.offset                                                                                               
+         at src/Service/OrderService.php:47                                                                             
+  47     Result of || is always false.                                                                                  
+         🪪  booleanOr.alwaysFalse                                                                                      
+         💡  Because the type is coming from a PHPDoc, you can turn off this check by setting [36mtreatPhpDocTypesAsCertain[39m  
+         [36m: false[39m in your [36mphpstan.neon[39m.                                                                                  
+         at src/Service/OrderService.php:47                                                                             
+  69     Parameter #3 $user of class App\Entity\Order constructor expects App\Entity\User, App\Service\User given.      
+         🪪  argument.type                                                                                              
+         at src/Service/OrderService.php:69                                                                             
+  89     PHPDoc tag @var for variable $product contains unknown class App\Service\Product.                              
+         🪪  class.notFound                                                                                             
+         💡  Learn more at https://phpstan.org/user-guide/discovering-symbols                                           
+         at src/Service/OrderService.php:89                                                                             
+  96     Parameter #2 $product of class App\Entity\ProductInOrder constructor expects App\Entity\Product,               
+         App\Service\Product given.                                                                                     
+         🪪  argument.type                                                                                              
+         at src/Service/OrderService.php:96                                                                             
+ ------ --------------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mService\ProductCategoryService.php[39m                                                                             
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  21     Method App\Service\ProductCategoryService::getAllProductCategories() has invalid return type                   
+         App\Service\ProductCategory.                                                                                   
+         🪪  class.notFound                                                                                             
+         at src/Service/ProductCategoryService.php:21                                                                   
+  23     Method App\Service\ProductCategoryService::getAllProductCategories() should return array<App\Service\ProductC  
+         ategory> but returns list<App\Entity\ProductCategory>.                                                         
+         🪪  return.type                                                                                                
+         at src/Service/ProductCategoryService.php:23                                                                   
+ ------ --------------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  [32mLine[39m   [32mService\ProductService.php[39m                                                                                     
+ ------ --------------------------------------------------------------------------------------------------------------- 
+  63     Offset 'name' might not exist on array{name?: string, description?: string, price?: float, categoryId?: int,   
+         imageBase64?: string}.                                                                                         
+         🪪  offsetAccess.notFound                                                                                      
+         at src/Service/ProductService.php:63                                                                           
+  64     Offset 'description' might not exist on array{name?: string, description?: string, price?: float,              
+         categoryId?: int, imageBase64?: string}.                                                                       
+         🪪  offsetAccess.notFound                                                                                      
+         at src/Service/ProductService.php:64                                                                           
+  65     Offset 'price' might not exist on array{name?: string, description?: string, price?: float, categoryId?: int,  
+         imageBase64?: string}.                                                                                         
+         🪪  offsetAccess.notFound                                                                                      
+         at src/Service/ProductService.php:65                                                                           
+  67     Offset 'categoryId' might not exist on array{name?: string, description?: string, price?: float, categoryId?:  
+         int, imageBase64?: string}.                                                                                    
+         🪪  offsetAccess.notFound                                                                                      
+         at src/Service/ProductService.php:67                                                                           
+ ------ --------------------------------------------------------------------------------------------------------------- 
+
+[37;41m                                                                                                                       [39;49m
+[37;41m [ERROR] Found 21 errors                                                                                               [39;49m
+[37;41m                                                                                                                       [39;49m
+

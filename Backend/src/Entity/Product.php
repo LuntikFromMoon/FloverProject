@@ -13,7 +13,7 @@ class Product
         private ?string $imagePath,
     ) {}
 
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -38,7 +38,7 @@ class Product
         return $this->price;
     }
 
-    public function getImagePath(): string
+    public function getImagePath(): ?string
     {
         return $this->imagePath;
     }

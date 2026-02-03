@@ -3,17 +3,16 @@ import ProductGallery from './ProductGallery/ProductGallery';
 import CatItem from "../../components/Main/MainMiddlePart/CatalogItem/CatalogItem";
 import CounterWithButton from "./CounterWithButton/CounterWithButton"
 import catalog_photo from "../../assets/pictures/roses.jpg";
-import catalog_photo2 from "../../assets/pictures/image 26 (1).png";
-import catalog_photo3 from "../../assets/pictures/main_right_first.png";
 import {Link, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {addToCart} from "../../utils/cartService";
+import { Product } from '../../types';
 
 export const ProductCard = () => {
     const { id } = useParams();
-    const [product, setProduct] = useState<any>(null);
+    const [product, setProduct] = useState<Product | null>(null);
     const [loading, setLoading] = useState(true);
-    const [relatedProducts, setRelatedProducts] = useState<any[]>([]);
+    const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
 
     useEffect(() => {
         setLoading(true);
@@ -30,7 +29,6 @@ export const ProductCard = () => {
                 setLoading(false);
             });
 
-        //сопутствующие
         fetch(`http://localhost:8000/api/products`)
             .then(res => res.json())
             .then(data => {
@@ -39,7 +37,7 @@ export const ProductCard = () => {
                 const shuffled = [...allProducts]
                     .filter(item => item.id !== Number(id))
                     .sort(() => 0.5 - Math.random())
-                    .slice(0, 4);
+                    .slice(0, 5);
 
                 setRelatedProducts(shuffled);
             })

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Entity\Product;
 use App\Repository\ProductRepository;
 use App\Service\ProductService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -30,16 +31,23 @@ class ProductController extends AbstractController
         $sort = $request->query->get('sort');
         $order = $request->query->get('order', 'asc');
 
+        $categoryFilter = is_numeric($category) ? (int) $category : null;
+        $minPriceFilter = is_numeric($minPrice) ? (float) $minPrice : null;
+        $maxPriceFilter = is_numeric($maxPrice) ? (float) $maxPrice : null;
+        $searchFilter = is_string($search) && $search !== '' ? $search : null;
+        $sortFilter = is_string($sort) && $sort !== '' ? $sort : null;
+        $orderFilter = is_string($order) ? $order : 'asc';
+
         $products = $this->productRepository->findWithFilters(
-            is_numeric($category) ? (int) $category : null,
-            is_numeric($minPrice) ? (float) $minPrice : null,
-            is_numeric($maxPrice) ? (float) $maxPrice : null,
-            $search,
-            $sort,
-            $order
+            $categoryFilter,
+            $minPriceFilter,
+            $maxPriceFilter,
+            $searchFilter,
+            $sortFilter,
+            $orderFilter
         );
 
-        $data = array_map(function ($product) {
+        $data = array_map(function (Product $product) {
             return [
                 'id' => $product->getId(),
                 'name' => $product->getName(),
@@ -59,6 +67,7 @@ class ProductController extends AbstractController
     #[Route('/api/products', name: 'api_create_product', methods: ['POST'])]
     public function createProduct(Request $request): JsonResponse
     {
+        /** @var array{name: string, description: string, price: float, categoryId: int, imageBase64: string} $data */
         $data = $request->toArray();
 
         $this->productService->createProduct($data);
@@ -69,6 +78,7 @@ class ProductController extends AbstractController
     #[Route('/api/products/{id}', name: 'api_get_product', methods: ['GET'])]
     public function getProduct(int $id): JsonResponse
     {
+        /** @var Product|null $product */
         $product = $this->productRepository->find($id);
         if (!$product) {
             return $this->json([

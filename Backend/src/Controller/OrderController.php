@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Entity\Order;
 use App\Service\OrderService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -21,6 +22,19 @@ class OrderController extends AbstractController
     #[Route('/api/orders', name: 'api_create_order', methods: ['POST'])]
     public function createOrder(Request $request): JsonResponse
     {
+        /** @var array{
+         *     products: array,
+         *      deliveryDate: string,
+         *      deliveryTime: string,
+         *      address: string,
+         *      recipientName: string,
+         *      recipientPhone: string,
+         *      senderName: string,
+         *      senderPhone: string,
+         *      description: string,
+         *      totalPrice: float
+         * } $data
+         */
         $data = $request->toArray();
 
         $order = $this->orderService->createOrder($data, 1);
@@ -48,7 +62,7 @@ class OrderController extends AbstractController
     {
         $orders = $this->orderService->getAllOrders();
 
-        $ordersData = array_map(function ($order) {
+        $ordersData = array_map(function (Order $order) {
             $currentStatusName = $order->getStatus()->getName();
             $nextStatusName = $this->orderService->getNextStatus($currentStatusName);
 
@@ -79,15 +93,15 @@ class OrderController extends AbstractController
     {
         $order = $this->orderService->getOrderById($id);
 
-        $currentStatusName = $order->getStatus()->getName();
-        $nextStatusName = $this->orderService->getNextStatus($currentStatusName);
-
         if (!$order) {
             return $this->json([
                 'status' => 'error',
                 'message' => 'Order not found',
             ], 404);
         }
+
+        $currentStatusName = $order->getStatus()->getName();
+        $nextStatusName = $this->orderService->getNextStatus($currentStatusName);
 
         return $this->json([
             'status' => 'success',

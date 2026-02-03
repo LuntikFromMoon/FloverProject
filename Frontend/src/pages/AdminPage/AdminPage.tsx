@@ -3,43 +3,14 @@ import TrashBin from "../../assets/icons/TrashBin";
 import {useEffect, useState} from "react";
 import Edit from "../../assets/icons/Edit";
 import {Link} from "react-router-dom";
+import { Product, Order, SalesStatistics } from '../../types';
 
 export const AdminPage = () => {
     const [view, setView] =
         useState<'products' | 'orders' | 'statistics'>('products');
-    const [products, setProducts] = useState<any[]>([]);
-    const [orders, setOrders] = useState<any[]>([]);
-    const [editingId, setEditingId] = useState<number | null>(null);
-    const [editForm, setEditForm] = useState<any>(null);
-    const [stats, setStats] = useState<any[]>([]);
-
-    const startEdit = (product: any) => {
-        setEditingId(product.id);
-        setEditForm({ ...product });
-    };
-
-    const cancelEdit = () => {
-        setEditingId(null);
-        setEditForm(null);
-    };
-
-    const saveEdit = async () => {
-        try {
-            const response = await fetch(`http://localhost:8000/api/products/${editingId}`, {
-                method: 'PUT', // или PUT, уточни у бэкендера
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(editForm)
-            });
-
-            if (response.ok) {
-                setProducts(prev => prev.map(p => p.id === editingId ? editForm : p));
-                setEditingId(null);
-            }
-        } catch (err) {
-            console.error("Ошибка при сохранении:", err);
-        }
-    };
-
+    const [products, setProducts] = useState<Product[]>([]);
+    const [orders, setOrders] = useState<Order[]>([]);
+    const [stats, setStats] = useState<SalesStatistics[]>([]);
     const handleStatusChange = async (orderId: number, newStatus: string) => {
         try {
             const response = await fetch(`http://localhost:8000/api/orders/change-status/${orderId}`, {
@@ -187,9 +158,7 @@ export const AdminPage = () => {
                     <p className={styles.statsTitle}>Продажи по категориям</p>
                     <div className={styles.statsGrid}>
                         {stats.map(item => {
-                            const maxSold = Math.max(...stats.map(s => s.totalSold), 1);
-                            const progress = (item.totalSold / maxSold) * 100;
-
+                            Math.max(...stats.map(s => s.totalSold), 1);
                             return (
                                 <div key={item.categoryId} className={styles.statCard}>
                                     <div className={styles.statCard__info}>
